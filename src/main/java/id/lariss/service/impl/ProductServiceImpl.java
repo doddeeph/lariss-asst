@@ -5,6 +5,7 @@ import id.lariss.repository.ProductRepository;
 import id.lariss.service.ProductService;
 import id.lariss.service.dto.ProductDTO;
 import id.lariss.service.mapper.ProductMapper;
+import java.util.List;
 import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -84,5 +85,17 @@ public class ProductServiceImpl implements ProductService {
     public void delete(Long id) {
         LOG.debug("Request to delete Product : {}", id);
         productRepository.deleteById(id);
+    }
+
+    @Override
+    public List<ProductDTO> findAll() {
+        LOG.debug("Request to get all Products");
+        return productRepository.findAllWithToOneRelationships().stream().map(productMapper::toDto).toList();
+    }
+
+    @Override
+    public List<ProductDTO> findAllByCategoryName(String name) {
+        LOG.debug("Request to get all Products by category: {}", name);
+        return productRepository.findAllByCategoryName(name.toLowerCase()).stream().map(productMapper::toDto).toList();
     }
 }

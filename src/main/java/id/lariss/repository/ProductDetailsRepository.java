@@ -41,4 +41,17 @@ public interface ProductDetailsRepository extends JpaRepository<ProductDetails, 
         "select productDetails from ProductDetails productDetails left join fetch productDetails.product left join fetch productDetails.description left join fetch productDetails.color left join fetch productDetails.processor left join fetch productDetails.memory left join fetch productDetails.storage where productDetails.id =:id"
     )
     Optional<ProductDetails> findOneWithToOneRelationships(@Param("id") Long id);
+
+    @Query(
+        "select productDetails " +
+        "from ProductDetails productDetails " +
+        "left join fetch productDetails.product " +
+        "left join fetch productDetails.description " +
+        "left join fetch productDetails.color " +
+        "left join fetch productDetails.processor " +
+        "left join fetch productDetails.memory " +
+        "left join fetch productDetails.storage " +
+        "where lower(productDetails.product.name) like %:name%"
+    )
+    List<ProductDetails> findAllByProductName(@Param("name") String name);
 }
