@@ -1,0 +1,43 @@
+id;name;category_id
+1;15-inch MacBook Air;1
+2;13-inch MacBook Air;1
+3;13-inch MacBook Air (M1 Chip);1
+4;16-inch MacBook Pro M3 Max;1
+5;16-inch MacBook Pro M3 Pro;1
+6;14-inch MacBook Pro M3 Max;1
+7;14-inch MacBook Pro M3 Pro;1
+8;14-inch MacBook Pro M3;1
+9;16-inch MacBook Pro M2;1
+10;14-inch MacBook Pro M2;1
+11;24-inch iMac with Retina 4.5K display M3;2
+12;13-inch iPad Pro M4;3
+13;11-inch iPad Pro M4;3
+14;2022 11-inch iPad Pro;3
+15;2022 12.9-inch iPad Pro;3
+16;12.9-inch iPad Pro M1;3
+17;11-inch iPad Pro M1;3
+18;13-inch iPad Air M2;3
+19;11-inch iPad Air M2;3
+20;2022 10.9 inch iPad Air M1;3
+21;2022 10.9-inch iPad;3
+22;2021 10.2-inch iPad;3
+23;iPad mini;3
+24;iPhone 15 Pro;4
+25;iPhone 15 Pro Max;4
+26;iPhone 15;4
+27;iPhone 15 Plus;4
+28;iPhone 14;4
+29;iPhone 13;4
+30;iPhone 12;4
+31;Apple Watch SE with Sport Band;5
+32;Apple Watch SE with Sport Loop;5
+33;Apple Watch Ultra 2 with Ocean Band;5
+34;Apple Watch Ultra 2 with Alpine Loop;5
+35;Apple Watch Ultra 2 with Trail Loop;5
+36;Apple Watch Ultra 2 with Milanese Loop;5
+37;Apple Watch Series 9 with Sport Loop;5
+38;Apple Watch Series 9 With Sport Band;5
+39;AirPods Pro (2nd generation) with USB-C;6
+40;AirPods (3rd generation) with MagSafe Charging Case;6
+41;AirPods (2nd generation) with Charging Case;6
+42;AirPods Max;6

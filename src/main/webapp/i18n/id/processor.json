@@ -1,0 +1,25 @@
+{
+  "larissAsstApp": {
+    "processor": {
+      "home": {
+        "title": "Processors",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Processor baru",
+        "createOrEditLabel": "Buat atau edit Processor",
+        "notFound": "No Processors found"
+      },
+      "created": "Processor dengan id {{ param }} telah dibuat",
+      "updated": "Processor dengan id {{ param }} telah diperbaharui",
+      "deleted": "Processor dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Processor {{ id }}?"
+      },
+      "detail": {
+        "title": "Processor"
+      },
+      "id": "ID",
+      "name": "Name",
+      "value": "Value"
+    }
+  }
+}

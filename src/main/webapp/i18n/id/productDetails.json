@@ -1,0 +1,32 @@
+{
+  "larissAsstApp": {
+    "productDetails": {
+      "home": {
+        "title": "Product Details",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Product Details baru",
+        "createOrEditLabel": "Buat atau edit Product Details",
+        "notFound": "No Product Details found"
+      },
+      "created": "Product Details dengan id {{ param }} telah dibuat",
+      "updated": "Product Details dengan id {{ param }} telah diperbaharui",
+      "deleted": "Product Details dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Product Details {{ id }}?"
+      },
+      "detail": {
+        "title": "Product Details"
+      },
+      "id": "ID",
+      "name": "Name",
+      "price": "Price",
+      "thumbnail": "Thumbnail",
+      "product": "Product",
+      "description": "Description",
+      "color": "Color",
+      "processor": "Processor",
+      "memory": "Memory",
+      "storage": "Storage"
+    }
+  }
+}

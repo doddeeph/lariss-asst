@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <!--
+        Added the constraints for entity ProductDetails.
+    -->
+    <changeSet id="20241203050752-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="product_id"
+                                 baseTableName="product_details"
+                                 constraintName="fk_product_details__product_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="product"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="description_id"
+                                 baseTableName="product_details"
+                                 constraintName="fk_product_details__description_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="description"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="color_id"
+                                 baseTableName="product_details"
+                                 constraintName="fk_product_details__color_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="color"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="processor_id"
+                                 baseTableName="product_details"
+                                 constraintName="fk_product_details__processor_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="processor"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="memory_id"
+                                 baseTableName="product_details"
+                                 constraintName="fk_product_details__memory_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="memory"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="storage_id"
+                                 baseTableName="product_details"
+                                 constraintName="fk_product_details__storage_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="storage"
+                                 />
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,13 @@
+id;name;price;thumbnail;product_id;color_id;processor_id;memory_id;storage_id;description_id
+1;512 GB,Space Grey,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;26499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;2;1;1;2;1
+2;512 GB,Silver,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;26499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;3;1;1;2;1
+3;512 GB,Midnight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;26499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;1;1;1;2;1
+4;512 GB,Starlight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;26499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;4;1;1;2;1
+5;256 GB,Midnight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;22499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;1;1;1;1;1
+6;512 GB,Midnight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),24 GB;29499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;1;1;2;2;1
+7;256 GB,Space Grey,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;22499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;2;1;1;1;1
+8;512 GB,Space Grey,Apple M3 Chip (CPU 8-Core, GPU 10-Core),24 GB;29499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;2;1;2;2;1
+9;256 GB,Silver,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;22499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;3;1;1;1;1
+10;512 GB,Silver,Apple M3 Chip (CPU 8-Core, GPU 10-Core),24 GB;29499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;3;1;2;2;1
+11;256 GB,Starlight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;22499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;4;1;1;1;1
+12;512 GB,Starlight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),24 GB;29499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;4;1;2;2;1

@@ -1,0 +1,25 @@
+{
+  "larissAsstApp": {
+    "description": {
+      "home": {
+        "title": "Descriptions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Description",
+        "createOrEditLabel": "Create or edit a Description",
+        "notFound": "No Descriptions found"
+      },
+      "created": "A new Description is created with identifier {{ param }}",
+      "updated": "A Description is updated with identifier {{ param }}",
+      "deleted": "A Description is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Description {{ id }}?"
+      },
+      "detail": {
+        "title": "Description"
+      },
+      "id": "ID",
+      "name": "Name",
+      "value": "Value"
+    }
+  }
+}

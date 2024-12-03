@@ -1,0 +1,25 @@
+{
+  "larissAsstApp": {
+    "memory": {
+      "home": {
+        "title": "Memories",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Memory baru",
+        "createOrEditLabel": "Buat atau edit Memory",
+        "notFound": "No Memories found"
+      },
+      "created": "Memory dengan id {{ param }} telah dibuat",
+      "updated": "Memory dengan id {{ param }} telah diperbaharui",
+      "deleted": "Memory dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Memory {{ id }}?"
+      },
+      "detail": {
+        "title": "Memory"
+      },
+      "id": "ID",
+      "name": "Name",
+      "value": "Value"
+    }
+  }
+}

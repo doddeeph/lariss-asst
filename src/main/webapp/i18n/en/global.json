@@ -7,7 +7,15 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
-        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
+        "category": "Category",
+        "product": "Product",
+        "productDetails": "Product Details",
+        "color": "Color",
+        "processor": "Processor",
+        "memory": "Memory",
+        "storage": "Storage",
+        "description": "Description"
       },
       "account": {
         "main": "Account",

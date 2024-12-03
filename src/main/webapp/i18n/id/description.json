@@ -1,0 +1,25 @@
+{
+  "larissAsstApp": {
+    "description": {
+      "home": {
+        "title": "Descriptions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Description baru",
+        "createOrEditLabel": "Buat atau edit Description",
+        "notFound": "No Descriptions found"
+      },
+      "created": "Description dengan id {{ param }} telah dibuat",
+      "updated": "Description dengan id {{ param }} telah diperbaharui",
+      "deleted": "Description dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Description {{ id }}?"
+      },
+      "detail": {
+        "title": "Description"
+      },
+      "id": "ID",
+      "name": "Name",
+      "value": "Value"
+    }
+  }
+}

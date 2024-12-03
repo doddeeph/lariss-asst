@@ -1,0 +1,25 @@
+{
+  "larissAsstApp": {
+    "color": {
+      "home": {
+        "title": "Colors",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Color baru",
+        "createOrEditLabel": "Buat atau edit Color",
+        "notFound": "No Colors found"
+      },
+      "created": "Color dengan id {{ param }} telah dibuat",
+      "updated": "Color dengan id {{ param }} telah diperbaharui",
+      "deleted": "Color dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Color {{ id }}?"
+      },
+      "detail": {
+        "title": "Color"
+      },
+      "id": "ID",
+      "name": "Name",
+      "value": "Value"
+    }
+  }
+}

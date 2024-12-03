@@ -1,0 +1,25 @@
+{
+  "larissAsstApp": {
+    "storage": {
+      "home": {
+        "title": "Storages",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Storage baru",
+        "createOrEditLabel": "Buat atau edit Storage",
+        "notFound": "No Storages found"
+      },
+      "created": "Storage dengan id {{ param }} telah dibuat",
+      "updated": "Storage dengan id {{ param }} telah diperbaharui",
+      "deleted": "Storage dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Storage {{ id }}?"
+      },
+      "detail": {
+        "title": "Storage"
+      },
+      "id": "ID",
+      "name": "Name",
+      "value": "Value"
+    }
+  }
+}
