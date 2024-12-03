@@ -1,0 +1,51 @@
+
+entity Category {
+  name String required
+}
+
+entity Product {
+  name String required
+}
+
+entity ProductDetails {
+  name String required
+  price BigDecimal required
+  thumbnail String required
+}
+
+entity Color {
+  name String required
+  value String
+}
+
+entity Processor {
+  name String required
+  value String
+}
+
+entity Memory {
+  name String required
+  value String
+}
+
+entity Storage {
+  name String required
+  value String
+}
+
+entity Description {
+  name String required
+  value String
+}
+
+relationship ManyToOne {
+  Product{category(name)} to Category
+  ProductDetails{product(name)} to Product
+  ProductDetails{description(name)} to Description
+  ProductDetails{color(name)} to Color
+  ProductDetails{processor(name)} to Processor
+  ProductDetails{memory(name)} to Memory
+  ProductDetails{storage(name)} to Storage
+}
+
+use mapstruct, serviceImpl, pagination for *
