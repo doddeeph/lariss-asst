@@ -1,2 +1,9 @@
 id;name;value
-1;Apple M3 Chip (CPU 8-Core, GPU 10-Core);Apple M3 Chip (CPU 8-Core, GPU 10-Core)
+1;Apple M1 Chip (CPU 8-Core, GPU 7-Core);Apple M1 Chip (CPU 8-Core, GPU 7-Core)
+2;Apple M2 Chip (CPU 8-Core, GPU 8-Core);Apple M2 Chip (CPU 8-Core, GPU 8-Core)
+3;Apple M3 Chip (CPU 8-Core, GPU 8-Core);Apple M3 Chip (CPU 8-Core, GPU 8-Core)
+4;Apple M3 Chip (CPU 8-Core, GPU 10-Core);Apple M3 Chip (CPU 8-Core, GPU 10-Core)
+5;Apple M3 Pro Chip (CPU 11-Core, GPU 14-Core);Apple M3 Pro Chip (CPU 11-Core, GPU 14-Core)
+6;Apple M3 Pro Chip (CPU 12-Core, GPU 18-Core);Apple M3 Pro Chip (CPU 12-Core, GPU 18-Core)
+7;Apple M3 Max Chip (CPU 14-Core, GPU 30-Core);Apple M3 Max Chip (CPU 14-Core, GPU 30-Core)
+8;Apple M3 Max Chip (CPU 16-Core, GPU 40-Core);Apple M3 Max Chip (CPU 16-Core, GPU 40-Core)
