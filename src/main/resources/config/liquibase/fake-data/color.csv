@@ -9,3 +9,60 @@ id;name;value
 8;Green;#0F505A,#A3BEB2
 9;Pink;#B62C32,#ECB9AF
 10;Silver2;#C7C9CA,#D8DADC
+11;Silver iPad Air M2 & Pro M4;#E3E4E5
+12;Space Black iPad Air M2 & Pro M4;#2E2C2E
+13;Space Grey iPad Pro M2 (2022);#B1B5B8
+14;Silver iPad Pro M2 (2022);#E0E2E1
+15;Space Gray iPad Air M2 & Pro M4;#6B696E
+16;Blue iPad Air M2 & Pro M4;#D7E5E6
+17;Purple iPad Air M2 & Pro M4;#E3DEE9
+18;Starlight iPad Air M2 & Pro M4;#E5E0D8
+19;Starlight iPad Air M1;#faf7f2
+20;Purple iPad Air M1;#bfbdd3
+21;Pink iPad Air M1;#e7d2cf
+22;Blue iPad Air M1;#90b4c4
+23;Space Gray iPad Air M1;#737176
+24;Blue iPad Gen 10;#6a81a3
+25;Pink iPad Gen 10;#df6775
+26;Silver iPad Gen 10;#e3e4e6
+27;Yellow iPad Gen 10;#f0d962
+28;Space Grey iPad;#7d7e80
+29;Silver iPad ;#e3e4e5
+30;Space Gray iPad Mini 6;#78767b
+31;Starlight iPad Mini 6;#faf7f2
+32;Purple iPad Mini 6;#c0bed4
+33;Pink iPad Mini 6;#e7d2cf
+34;Natural Titanium;#847f7c
+35;Blue Titanium;#2f4452
+36;White Titanium;#dddddd
+37;Black Titanium;#1b1b1b
+38;Blue iPhone 15 Series;#ced5d9
+39;Pink iPhone 15 Series;#e3c8ca
+40;Yellow iPhone 15 Series;#e5e0c1
+41;Green iPhone 15 Series;#cad4c5
+42;Black iPhone 15 Series;#35393b
+43;Yellow iPhone 14 Series;#f9e479
+44;Red iPhone 14 Series;#fc0324
+45;Purple iPhone 14 Series;#e6ddeb
+46;Starlight iPhone 14 Series;#faf6f2
+47;Midnight iPhone 14 Series;#222930
+48;Blue iPhone 14 Series;#a0b4c7
+49;Green iPhone 13 Series;#394C38
+50;Pink iPhone 13 Series;#FADDD7
+51;Blue iPhone 13 Series;#276787
+52;Midnight iPhone 13 Series;#232A31
+53;Starlight iPhone 13 Series;#FAF6F2
+54;Red iPhone 13 Series;#BF0013
+55;Black iPhone 12 Series;#25212B
+56;White iPhone 12 Series;#F6F2EF
+57;Red iPhone 12 Series;#D82E2E
+58;Green iPhone 12 Series;#D8EFD5
+59;Blue iPhone 12 Series;#023B63
+60;Purple iPhone 12 Series;#B7AFE6
+61;Midnight Apple Watch;#222930
+62;Starlight Apple Watch;#faf6f2
+63;Silver Apple Watch;#f0f2f2
+64;Natural Apple Watch;#DCD1C7
+65;Black Apple Watch;#383635
+66;Pink Apple Watch;#EFD1CD
+67;Red Apple Watch;#D61139

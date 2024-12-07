@@ -1,0 +1,25 @@
+{
+  "larissAsstApp": {
+    "screen": {
+      "home": {
+        "title": "Screens",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Screen baru",
+        "createOrEditLabel": "Buat atau edit Screen",
+        "notFound": "No Screens found"
+      },
+      "created": "Screen dengan id {{ param }} telah dibuat",
+      "updated": "Screen dengan id {{ param }} telah diperbaharui",
+      "deleted": "Screen dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Screen {{ id }}?"
+      },
+      "detail": {
+        "title": "Screen"
+      },
+      "id": "ID",
+      "name": "Name",
+      "value": "Value"
+    }
+  }
+}

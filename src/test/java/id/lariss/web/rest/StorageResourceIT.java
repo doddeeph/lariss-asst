@@ -294,6 +294,8 @@ class StorageResourceIT {
         Storage partialUpdatedStorage = new Storage();
         partialUpdatedStorage.setId(storage.getId());
 
+        partialUpdatedStorage.name(UPDATED_NAME);
+
         restStorageMockMvc
             .perform(
                 patch(ENTITY_API_URL_ID, partialUpdatedStorage.getId())

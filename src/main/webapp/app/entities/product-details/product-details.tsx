@@ -143,6 +143,24 @@ export const ProductDetails = () => {
                 <th>
                   <Translate contentKey="larissAsstApp.productDetails.storage">Storage</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
+                <th>
+                  <Translate contentKey="larissAsstApp.productDetails.screen">Screen</Translate> <FontAwesomeIcon icon="sort" />
+                </th>
+                <th>
+                  <Translate contentKey="larissAsstApp.productDetails.connectivity">Connectivity</Translate> <FontAwesomeIcon icon="sort" />
+                </th>
+                <th>
+                  <Translate contentKey="larissAsstApp.productDetails.material">Material</Translate> <FontAwesomeIcon icon="sort" />
+                </th>
+                <th>
+                  <Translate contentKey="larissAsstApp.productDetails.caseSize">Case Size</Translate> <FontAwesomeIcon icon="sort" />
+                </th>
+                <th>
+                  <Translate contentKey="larissAsstApp.productDetails.strapColor">Strap Color</Translate> <FontAwesomeIcon icon="sort" />
+                </th>
+                <th>
+                  <Translate contentKey="larissAsstApp.productDetails.strapSize">Strap Size</Translate> <FontAwesomeIcon icon="sort" />
+                </th>
                 <th />
               </tr>
             </thead>
@@ -180,6 +198,44 @@ export const ProductDetails = () => {
                   </td>
                   <td>
                     {productDetails.storage ? <Link to={`/storage/${productDetails.storage.id}`}>{productDetails.storage.name}</Link> : ''}
+                  </td>
+                  <td>
+                    {productDetails.screen ? <Link to={`/screen/${productDetails.screen.id}`}>{productDetails.screen.name}</Link> : ''}
+                  </td>
+                  <td>
+                    {productDetails.connectivity ? (
+                      <Link to={`/connectivity/${productDetails.connectivity.id}`}>{productDetails.connectivity.name}</Link>
+                    ) : (
+                      ''
+                    )}
+                  </td>
+                  <td>
+                    {productDetails.material ? (
+                      <Link to={`/material/${productDetails.material.id}`}>{productDetails.material.name}</Link>
+                    ) : (
+                      ''
+                    )}
+                  </td>
+                  <td>
+                    {productDetails.caseSize ? (
+                      <Link to={`/case-size/${productDetails.caseSize.id}`}>{productDetails.caseSize.name}</Link>
+                    ) : (
+                      ''
+                    )}
+                  </td>
+                  <td>
+                    {productDetails.strapColor ? (
+                      <Link to={`/strap-color/${productDetails.strapColor.id}`}>{productDetails.strapColor.name}</Link>
+                    ) : (
+                      ''
+                    )}
+                  </td>
+                  <td>
+                    {productDetails.strapSize ? (
+                      <Link to={`/strap-size/${productDetails.strapSize.id}`}>{productDetails.strapSize.name}</Link>
+                    ) : (
+                      ''
+                    )}
                   </td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">

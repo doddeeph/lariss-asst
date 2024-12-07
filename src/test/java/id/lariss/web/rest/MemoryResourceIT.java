@@ -294,8 +294,6 @@ class MemoryResourceIT {
         Memory partialUpdatedMemory = new Memory();
         partialUpdatedMemory.setId(memory.getId());
 
-        partialUpdatedMemory.name(UPDATED_NAME);
-
         restMemoryMockMvc
             .perform(
                 patch(ENTITY_API_URL_ID, partialUpdatedMemory.getId())

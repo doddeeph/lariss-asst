@@ -1,0 +1,25 @@
+{
+  "larissAsstApp": {
+    "strapColor": {
+      "home": {
+        "title": "Strap Colors",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Strap Color baru",
+        "createOrEditLabel": "Buat atau edit Strap Color",
+        "notFound": "No Strap Colors found"
+      },
+      "created": "Strap Color dengan id {{ param }} telah dibuat",
+      "updated": "Strap Color dengan id {{ param }} telah diperbaharui",
+      "deleted": "Strap Color dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Strap Color {{ id }}?"
+      },
+      "detail": {
+        "title": "Strap Color"
+      },
+      "id": "ID",
+      "name": "Name",
+      "value": "Value"
+    }
+  }
+}

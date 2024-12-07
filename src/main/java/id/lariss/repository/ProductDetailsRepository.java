@@ -27,18 +27,18 @@ public interface ProductDetailsRepository extends JpaRepository<ProductDetails, 
     }
 
     @Query(
-        value = "select productDetails from ProductDetails productDetails left join fetch productDetails.product left join fetch productDetails.description left join fetch productDetails.color left join fetch productDetails.processor left join fetch productDetails.memory left join fetch productDetails.storage",
+        value = "select productDetails from ProductDetails productDetails left join fetch productDetails.product left join fetch productDetails.description left join fetch productDetails.color left join fetch productDetails.processor left join fetch productDetails.memory left join fetch productDetails.storage left join fetch productDetails.screen left join fetch productDetails.connectivity left join fetch productDetails.material left join fetch productDetails.caseSize left join fetch productDetails.strapColor left join fetch productDetails.strapSize",
         countQuery = "select count(productDetails) from ProductDetails productDetails"
     )
     Page<ProductDetails> findAllWithToOneRelationships(Pageable pageable);
 
     @Query(
-        "select productDetails from ProductDetails productDetails left join fetch productDetails.product left join fetch productDetails.description left join fetch productDetails.color left join fetch productDetails.processor left join fetch productDetails.memory left join fetch productDetails.storage"
+        "select productDetails from ProductDetails productDetails left join fetch productDetails.product left join fetch productDetails.description left join fetch productDetails.color left join fetch productDetails.processor left join fetch productDetails.memory left join fetch productDetails.storage left join fetch productDetails.screen left join fetch productDetails.connectivity left join fetch productDetails.material left join fetch productDetails.caseSize left join fetch productDetails.strapColor left join fetch productDetails.strapSize"
     )
     List<ProductDetails> findAllWithToOneRelationships();
 
     @Query(
-        "select productDetails from ProductDetails productDetails left join fetch productDetails.product left join fetch productDetails.description left join fetch productDetails.color left join fetch productDetails.processor left join fetch productDetails.memory left join fetch productDetails.storage where productDetails.id =:id"
+        "select productDetails from ProductDetails productDetails left join fetch productDetails.product left join fetch productDetails.description left join fetch productDetails.color left join fetch productDetails.processor left join fetch productDetails.memory left join fetch productDetails.storage left join fetch productDetails.screen left join fetch productDetails.connectivity left join fetch productDetails.material left join fetch productDetails.caseSize left join fetch productDetails.strapColor left join fetch productDetails.strapSize where productDetails.id =:id"
     )
     Optional<ProductDetails> findOneWithToOneRelationships(@Param("id") Long id);
 }

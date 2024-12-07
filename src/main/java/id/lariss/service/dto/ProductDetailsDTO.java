@@ -34,6 +34,18 @@ public class ProductDetailsDTO implements Serializable {
 
     private StorageDTO storage;
 
+    private ScreenDTO screen;
+
+    private ConnectivityDTO connectivity;
+
+    private MaterialDTO material;
+
+    private CaseSizeDTO caseSize;
+
+    private StrapColorDTO strapColor;
+
+    private StrapSizeDTO strapSize;
+
     public Long getId() {
         return id;
     }
@@ -114,6 +126,54 @@ public class ProductDetailsDTO implements Serializable {
         this.storage = storage;
     }
 
+    public ScreenDTO getScreen() {
+        return screen;
+    }
+
+    public void setScreen(ScreenDTO screen) {
+        this.screen = screen;
+    }
+
+    public ConnectivityDTO getConnectivity() {
+        return connectivity;
+    }
+
+    public void setConnectivity(ConnectivityDTO connectivity) {
+        this.connectivity = connectivity;
+    }
+
+    public MaterialDTO getMaterial() {
+        return material;
+    }
+
+    public void setMaterial(MaterialDTO material) {
+        this.material = material;
+    }
+
+    public CaseSizeDTO getCaseSize() {
+        return caseSize;
+    }
+
+    public void setCaseSize(CaseSizeDTO caseSize) {
+        this.caseSize = caseSize;
+    }
+
+    public StrapColorDTO getStrapColor() {
+        return strapColor;
+    }
+
+    public void setStrapColor(StrapColorDTO strapColor) {
+        this.strapColor = strapColor;
+    }
+
+    public StrapSizeDTO getStrapSize() {
+        return strapSize;
+    }
+
+    public void setStrapSize(StrapSizeDTO strapSize) {
+        this.strapSize = strapSize;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -149,6 +209,12 @@ public class ProductDetailsDTO implements Serializable {
             ", processor=" + getProcessor() +
             ", memory=" + getMemory() +
             ", storage=" + getStorage() +
+            ", screen=" + getScreen() +
+            ", connectivity=" + getConnectivity() +
+            ", material=" + getMaterial() +
+            ", caseSize=" + getCaseSize() +
+            ", strapColor=" + getStrapColor() +
+            ", strapSize=" + getStrapSize() +
             "}";
     }
 }
