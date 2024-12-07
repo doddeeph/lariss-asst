@@ -298,8 +298,6 @@ class DescriptionResourceIT {
         Description partialUpdatedDescription = new Description();
         partialUpdatedDescription.setId(description.getId());
 
-        partialUpdatedDescription.value(UPDATED_VALUE);
-
         restDescriptionMockMvc
             .perform(
                 patch(ENTITY_API_URL_ID, partialUpdatedDescription.getId())

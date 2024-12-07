@@ -19,6 +19,12 @@
     <include file="config/liquibase/changelog/20241203050755_added_entity_Memory.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20241203050756_added_entity_Storage.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20241203050757_added_entity_Description.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20241204230147_added_entity_Screen.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20241204230148_added_entity_Connectivity.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20241207093718_added_entity_Material.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20241207093719_added_entity_CaseSize.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20241207093720_added_entity_StrapColor.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20241207093721_added_entity_StrapSize.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <include file="config/liquibase/changelog/20241203050751_added_entity_constraints_Product.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20241203050752_added_entity_constraints_ProductDetails.xml" relativeToChangelogFile="false"/>

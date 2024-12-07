@@ -41,6 +41,24 @@
             <column name="storage_id" type="bigint">
                 <constraints nullable="true" />
             </column>
+            <column name="screen_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="connectivity_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="material_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="case_size_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="strap_color_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="strap_size_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
             <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
         </createTable>
     </changeSet>
@@ -71,6 +89,12 @@
             <column name="memory_id" type="numeric"/>
             <column name="storage_id" type="numeric"/>
             <column name="description_id" type="numeric"/>
+            <column name="screen_id" type="numeric"/>
+            <column name="connectivity_id" type="numeric"/>
+            <column name="material_id" type="numeric"/>
+            <column name="case_size_id" type="numeric"/>
+            <column name="strap_size_id" type="numeric"/>
+            <column name="strap_color_id" type="numeric"/>
             <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
         </loadData>
     </changeSet>

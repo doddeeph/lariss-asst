@@ -1,0 +1,25 @@
+{
+  "larissAsstApp": {
+    "strapSize": {
+      "home": {
+        "title": "Strap Sizes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Strap Size",
+        "createOrEditLabel": "Create or edit a Strap Size",
+        "notFound": "No Strap Sizes found"
+      },
+      "created": "A new Strap Size is created with identifier {{ param }}",
+      "updated": "A Strap Size is updated with identifier {{ param }}",
+      "deleted": "A Strap Size is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Strap Size {{ id }}?"
+      },
+      "detail": {
+        "title": "Strap Size"
+      },
+      "id": "ID",
+      "name": "Name",
+      "value": "Value"
+    }
+  }
+}

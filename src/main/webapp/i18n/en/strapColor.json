@@ -1,0 +1,25 @@
+{
+  "larissAsstApp": {
+    "strapColor": {
+      "home": {
+        "title": "Strap Colors",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Strap Color",
+        "createOrEditLabel": "Create or edit a Strap Color",
+        "notFound": "No Strap Colors found"
+      },
+      "created": "A new Strap Color is created with identifier {{ param }}",
+      "updated": "A Strap Color is updated with identifier {{ param }}",
+      "deleted": "A Strap Color is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Strap Color {{ id }}?"
+      },
+      "detail": {
+        "title": "Strap Color"
+      },
+      "id": "ID",
+      "name": "Name",
+      "value": "Value"
+    }
+  }
+}

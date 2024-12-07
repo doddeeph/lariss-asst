@@ -73,6 +73,30 @@ export const ProductDetailsDetail = () => {
             <Translate contentKey="larissAsstApp.productDetails.storage">Storage</Translate>
           </dt>
           <dd>{productDetailsEntity.storage ? productDetailsEntity.storage.name : ''}</dd>
+          <dt>
+            <Translate contentKey="larissAsstApp.productDetails.screen">Screen</Translate>
+          </dt>
+          <dd>{productDetailsEntity.screen ? productDetailsEntity.screen.name : ''}</dd>
+          <dt>
+            <Translate contentKey="larissAsstApp.productDetails.connectivity">Connectivity</Translate>
+          </dt>
+          <dd>{productDetailsEntity.connectivity ? productDetailsEntity.connectivity.name : ''}</dd>
+          <dt>
+            <Translate contentKey="larissAsstApp.productDetails.material">Material</Translate>
+          </dt>
+          <dd>{productDetailsEntity.material ? productDetailsEntity.material.name : ''}</dd>
+          <dt>
+            <Translate contentKey="larissAsstApp.productDetails.caseSize">Case Size</Translate>
+          </dt>
+          <dd>{productDetailsEntity.caseSize ? productDetailsEntity.caseSize.name : ''}</dd>
+          <dt>
+            <Translate contentKey="larissAsstApp.productDetails.strapColor">Strap Color</Translate>
+          </dt>
+          <dd>{productDetailsEntity.strapColor ? productDetailsEntity.strapColor.name : ''}</dd>
+          <dt>
+            <Translate contentKey="larissAsstApp.productDetails.strapSize">Strap Size</Translate>
+          </dt>
+          <dd>{productDetailsEntity.strapSize ? productDetailsEntity.strapSize.name : ''}</dd>
         </dl>
         <Button tag={Link} to="/product-details" replace color="info" data-cy="entityDetailsBackButton">
           <FontAwesomeIcon icon="arrow-left" />{' '}

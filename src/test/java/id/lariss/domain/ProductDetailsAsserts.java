@@ -67,6 +67,12 @@ public class ProductDetailsAsserts {
             .satisfies(e -> assertThat(e.getColor()).as("check color").isEqualTo(actual.getColor()))
             .satisfies(e -> assertThat(e.getProcessor()).as("check processor").isEqualTo(actual.getProcessor()))
             .satisfies(e -> assertThat(e.getMemory()).as("check memory").isEqualTo(actual.getMemory()))
-            .satisfies(e -> assertThat(e.getStorage()).as("check storage").isEqualTo(actual.getStorage()));
+            .satisfies(e -> assertThat(e.getStorage()).as("check storage").isEqualTo(actual.getStorage()))
+            .satisfies(e -> assertThat(e.getScreen()).as("check screen").isEqualTo(actual.getScreen()))
+            .satisfies(e -> assertThat(e.getConnectivity()).as("check connectivity").isEqualTo(actual.getConnectivity()))
+            .satisfies(e -> assertThat(e.getMaterial()).as("check material").isEqualTo(actual.getMaterial()))
+            .satisfies(e -> assertThat(e.getCaseSize()).as("check caseSize").isEqualTo(actual.getCaseSize()))
+            .satisfies(e -> assertThat(e.getStrapColor()).as("check strapColor").isEqualTo(actual.getStrapColor()))
+            .satisfies(e -> assertThat(e.getStrapSize()).as("check strapSize").isEqualTo(actual.getStrapSize()));
     }
 }

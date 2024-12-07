@@ -26,7 +26,13 @@
       "color": "Color",
       "processor": "Processor",
       "memory": "Memory",
-      "storage": "Storage"
+      "storage": "Storage",
+      "screen": "Screen",
+      "connectivity": "Connectivity",
+      "material": "Material",
+      "caseSize": "Case Size",
+      "strapColor": "Strap Color",
+      "strapSize": "Strap Size"
     }
   }
 }

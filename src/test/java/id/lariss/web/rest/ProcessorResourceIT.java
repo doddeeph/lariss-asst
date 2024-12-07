@@ -298,7 +298,7 @@ class ProcessorResourceIT {
         Processor partialUpdatedProcessor = new Processor();
         partialUpdatedProcessor.setId(processor.getId());
 
-        partialUpdatedProcessor.value(UPDATED_VALUE);
+        partialUpdatedProcessor.name(UPDATED_NAME);
 
         restProcessorMockMvc
             .perform(
