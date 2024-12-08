@@ -53,6 +53,24 @@ public class ProductDetails implements Serializable {
     @ManyToOne(fetch = FetchType.LAZY)
     private Storage storage;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Screen screen;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Connectivity connectivity;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Material material;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    private CaseSize caseSize;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    private StrapColor strapColor;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    private StrapSize strapSize;
+
     // jhipster-needle-entity-add-field - JHipster will add fields here
 
     public Long getId() {
@@ -182,6 +200,84 @@ public class ProductDetails implements Serializable {
 
     public ProductDetails storage(Storage storage) {
         this.setStorage(storage);
+        return this;
+    }
+
+    public Screen getScreen() {
+        return this.screen;
+    }
+
+    public void setScreen(Screen screen) {
+        this.screen = screen;
+    }
+
+    public ProductDetails screen(Screen screen) {
+        this.setScreen(screen);
+        return this;
+    }
+
+    public Connectivity getConnectivity() {
+        return this.connectivity;
+    }
+
+    public void setConnectivity(Connectivity connectivity) {
+        this.connectivity = connectivity;
+    }
+
+    public ProductDetails connectivity(Connectivity connectivity) {
+        this.setConnectivity(connectivity);
+        return this;
+    }
+
+    public Material getMaterial() {
+        return this.material;
+    }
+
+    public void setMaterial(Material material) {
+        this.material = material;
+    }
+
+    public ProductDetails material(Material material) {
+        this.setMaterial(material);
+        return this;
+    }
+
+    public CaseSize getCaseSize() {
+        return this.caseSize;
+    }
+
+    public void setCaseSize(CaseSize caseSize) {
+        this.caseSize = caseSize;
+    }
+
+    public ProductDetails caseSize(CaseSize caseSize) {
+        this.setCaseSize(caseSize);
+        return this;
+    }
+
+    public StrapColor getStrapColor() {
+        return this.strapColor;
+    }
+
+    public void setStrapColor(StrapColor strapColor) {
+        this.strapColor = strapColor;
+    }
+
+    public ProductDetails strapColor(StrapColor strapColor) {
+        this.setStrapColor(strapColor);
+        return this;
+    }
+
+    public StrapSize getStrapSize() {
+        return this.strapSize;
+    }
+
+    public void setStrapSize(StrapSize strapSize) {
+        this.strapSize = strapSize;
+    }
+
+    public ProductDetails strapSize(StrapSize strapSize) {
+        this.setStrapSize(strapSize);
         return this;
     }
 

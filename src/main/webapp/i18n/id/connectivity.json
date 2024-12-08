@@ -1,0 +1,25 @@
+{
+  "larissAsstApp": {
+    "connectivity": {
+      "home": {
+        "title": "Connectivities",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Connectivity baru",
+        "createOrEditLabel": "Buat atau edit Connectivity",
+        "notFound": "No Connectivities found"
+      },
+      "created": "Connectivity dengan id {{ param }} telah dibuat",
+      "updated": "Connectivity dengan id {{ param }} telah diperbaharui",
+      "deleted": "Connectivity dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Connectivity {{ id }}?"
+      },
+      "detail": {
+        "title": "Connectivity"
+      },
+      "id": "ID",
+      "name": "Name",
+      "value": "Value"
+    }
+  }
+}

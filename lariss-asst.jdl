@@ -38,6 +38,36 @@ entity Description {
   value String
 }
 
+entity Screen {
+  name String required
+  value String
+}
+
+entity Connectivity {
+  name String required
+  value String
+}
+
+entity Material {
+  name String required
+  value String
+}
+
+entity CaseSize {
+  name String required
+  value String
+}
+
+entity StrapColor {
+  name String required
+  value String
+}
+
+entity StrapSize {
+  name String required
+  value String
+}
+
 relationship ManyToOne {
   Product{category(name)} to Category
   ProductDetails{product(name)} to Product
@@ -46,6 +76,12 @@ relationship ManyToOne {
   ProductDetails{processor(name)} to Processor
   ProductDetails{memory(name)} to Memory
   ProductDetails{storage(name)} to Storage
+  ProductDetails{screen(name)} to Screen
+  ProductDetails{connectivity(name)} to Connectivity
+  ProductDetails{material(name)} to Material
+  ProductDetails{caseSize(name)} to CaseSize
+  ProductDetails{strapColor(name)} to StrapColor
+  ProductDetails{strapSize(name)} to StrapSize
 }
 
 use mapstruct, serviceImpl, pagination for *

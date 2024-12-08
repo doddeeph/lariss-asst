@@ -1,12 +1,18 @@
 package id.lariss.domain;
 
+import static id.lariss.domain.CaseSizeTestSamples.*;
 import static id.lariss.domain.ColorTestSamples.*;
+import static id.lariss.domain.ConnectivityTestSamples.*;
 import static id.lariss.domain.DescriptionTestSamples.*;
+import static id.lariss.domain.MaterialTestSamples.*;
 import static id.lariss.domain.MemoryTestSamples.*;
 import static id.lariss.domain.ProcessorTestSamples.*;
 import static id.lariss.domain.ProductDetailsTestSamples.*;
 import static id.lariss.domain.ProductTestSamples.*;
+import static id.lariss.domain.ScreenTestSamples.*;
 import static id.lariss.domain.StorageTestSamples.*;
+import static id.lariss.domain.StrapColorTestSamples.*;
+import static id.lariss.domain.StrapSizeTestSamples.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import id.lariss.web.rest.TestUtil;
@@ -98,5 +104,77 @@ class ProductDetailsTest {
 
         productDetails.storage(null);
         assertThat(productDetails.getStorage()).isNull();
+    }
+
+    @Test
+    void screenTest() {
+        ProductDetails productDetails = getProductDetailsRandomSampleGenerator();
+        Screen screenBack = getScreenRandomSampleGenerator();
+
+        productDetails.setScreen(screenBack);
+        assertThat(productDetails.getScreen()).isEqualTo(screenBack);
+
+        productDetails.screen(null);
+        assertThat(productDetails.getScreen()).isNull();
+    }
+
+    @Test
+    void connectivityTest() {
+        ProductDetails productDetails = getProductDetailsRandomSampleGenerator();
+        Connectivity connectivityBack = getConnectivityRandomSampleGenerator();
+
+        productDetails.setConnectivity(connectivityBack);
+        assertThat(productDetails.getConnectivity()).isEqualTo(connectivityBack);
+
+        productDetails.connectivity(null);
+        assertThat(productDetails.getConnectivity()).isNull();
+    }
+
+    @Test
+    void materialTest() {
+        ProductDetails productDetails = getProductDetailsRandomSampleGenerator();
+        Material materialBack = getMaterialRandomSampleGenerator();
+
+        productDetails.setMaterial(materialBack);
+        assertThat(productDetails.getMaterial()).isEqualTo(materialBack);
+
+        productDetails.material(null);
+        assertThat(productDetails.getMaterial()).isNull();
+    }
+
+    @Test
+    void caseSizeTest() {
+        ProductDetails productDetails = getProductDetailsRandomSampleGenerator();
+        CaseSize caseSizeBack = getCaseSizeRandomSampleGenerator();
+
+        productDetails.setCaseSize(caseSizeBack);
+        assertThat(productDetails.getCaseSize()).isEqualTo(caseSizeBack);
+
+        productDetails.caseSize(null);
+        assertThat(productDetails.getCaseSize()).isNull();
+    }
+
+    @Test
+    void strapColorTest() {
+        ProductDetails productDetails = getProductDetailsRandomSampleGenerator();
+        StrapColor strapColorBack = getStrapColorRandomSampleGenerator();
+
+        productDetails.setStrapColor(strapColorBack);
+        assertThat(productDetails.getStrapColor()).isEqualTo(strapColorBack);
+
+        productDetails.strapColor(null);
+        assertThat(productDetails.getStrapColor()).isNull();
+    }
+
+    @Test
+    void strapSizeTest() {
+        ProductDetails productDetails = getProductDetailsRandomSampleGenerator();
+        StrapSize strapSizeBack = getStrapSizeRandomSampleGenerator();
+
+        productDetails.setStrapSize(strapSizeBack);
+        assertThat(productDetails.getStrapSize()).isEqualTo(strapSizeBack);
+
+        productDetails.strapSize(null);
+        assertThat(productDetails.getStrapSize()).isNull();
     }
 }

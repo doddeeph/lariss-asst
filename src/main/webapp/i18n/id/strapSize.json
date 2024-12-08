@@ -1,0 +1,25 @@
+{
+  "larissAsstApp": {
+    "strapSize": {
+      "home": {
+        "title": "Strap Sizes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Strap Size baru",
+        "createOrEditLabel": "Buat atau edit Strap Size",
+        "notFound": "No Strap Sizes found"
+      },
+      "created": "Strap Size dengan id {{ param }} telah dibuat",
+      "updated": "Strap Size dengan id {{ param }} telah diperbaharui",
+      "deleted": "Strap Size dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Strap Size {{ id }}?"
+      },
+      "detail": {
+        "title": "Strap Size"
+      },
+      "id": "ID",
+      "name": "Name",
+      "value": "Value"
+    }
+  }
+}

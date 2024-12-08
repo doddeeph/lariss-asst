@@ -371,7 +371,7 @@ class ProductDetailsResourceIT {
         ProductDetails partialUpdatedProductDetails = new ProductDetails();
         partialUpdatedProductDetails.setId(productDetails.getId());
 
-        partialUpdatedProductDetails.name(UPDATED_NAME);
+        partialUpdatedProductDetails.price(UPDATED_PRICE).thumbnail(UPDATED_THUMBNAIL);
 
         restProductDetailsMockMvc
             .perform(

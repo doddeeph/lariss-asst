@@ -88,8 +88,20 @@ public class ProductDetailsServiceImpl implements ProductDetailsService {
     }
 
     @Override
-    public List<ProductDetailsDTO> findOneByProductName(String name) {
+    public List<ProductDetailsDTO> findAllByProductName(String name) {
         LOG.debug("Request to get all ProductDetails by product: {}", name);
         return productDetailsRepository.findAllByProductName(name.toLowerCase()).stream().map(productDetailsMapper::toDto).toList();
+    }
+
+    @Override
+    public List<ProductDetailsDTO> findAllByProductNameIn(List<String> names) {
+        LOG.debug("Request to get all ProductDetails by products: {}", names);
+        return productDetailsRepository.findAllByProductNameIn(names).stream().map(productDetailsMapper::toDto).toList();
+    }
+
+    @Override
+    public List<ProductDetailsDTO> findLowestPriceByProductNameIn(List<String> names) {
+        LOG.debug("Request to get lowest price ProductDetails by products: {}", names);
+        return productDetailsRepository.findLowestPriceByProductNameIn(names).stream().map(productDetailsMapper::toDto).toList();
     }
 }

@@ -11,6 +11,12 @@ import Processor from './processor';
 import Memory from './memory';
 import Storage from './storage';
 import Description from './description';
+import Screen from './screen';
+import Connectivity from './connectivity';
+import Material from './material';
+import CaseSize from './case-size';
+import StrapColor from './strap-color';
+import StrapSize from './strap-size';
 /* jhipster-needle-add-route-import - JHipster will add routes here */
 
 export default () => {
@@ -26,6 +32,12 @@ export default () => {
         <Route path="memory/*" element={<Memory />} />
         <Route path="storage/*" element={<Storage />} />
         <Route path="description/*" element={<Description />} />
+        <Route path="screen/*" element={<Screen />} />
+        <Route path="connectivity/*" element={<Connectivity />} />
+        <Route path="material/*" element={<Material />} />
+        <Route path="case-size/*" element={<CaseSize />} />
+        <Route path="strap-color/*" element={<StrapColor />} />
+        <Route path="strap-size/*" element={<StrapSize />} />
         {/* jhipster-needle-add-route-path - JHipster will add routes here */}
       </ErrorBoundaryRoutes>
     </div>

@@ -1,0 +1,25 @@
+{
+  "larissAsstApp": {
+    "caseSize": {
+      "home": {
+        "title": "Case Sizes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Case Size baru",
+        "createOrEditLabel": "Buat atau edit Case Size",
+        "notFound": "No Case Sizes found"
+      },
+      "created": "Case Size dengan id {{ param }} telah dibuat",
+      "updated": "Case Size dengan id {{ param }} telah diperbaharui",
+      "deleted": "Case Size dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Case Size {{ id }}?"
+      },
+      "detail": {
+        "title": "Case Size"
+      },
+      "id": "ID",
+      "name": "Name",
+      "value": "Value"
+    }
+  }
+}

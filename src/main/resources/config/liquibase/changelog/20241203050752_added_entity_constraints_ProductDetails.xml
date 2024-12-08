@@ -51,5 +51,47 @@
                                  referencedColumnNames="id"
                                  referencedTableName="storage"
                                  />
+
+        <addForeignKeyConstraint baseColumnNames="screen_id"
+                                 baseTableName="product_details"
+                                 constraintName="fk_product_details__screen_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="screen"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="connectivity_id"
+                                 baseTableName="product_details"
+                                 constraintName="fk_product_details__connectivity_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="connectivity"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="material_id"
+                                 baseTableName="product_details"
+                                 constraintName="fk_product_details__material_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="material"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="case_size_id"
+                                 baseTableName="product_details"
+                                 constraintName="fk_product_details__case_size_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="case_size"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="strap_color_id"
+                                 baseTableName="product_details"
+                                 constraintName="fk_product_details__strap_color_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="strap_color"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="strap_size_id"
+                                 baseTableName="product_details"
+                                 constraintName="fk_product_details__strap_size_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="strap_size"
+                                 />
     </changeSet>
 </databaseChangeLog>

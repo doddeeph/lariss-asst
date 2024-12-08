@@ -1,13 +1,485 @@
-id;name;price;thumbnail;product_id;color_id;processor_id;memory_id;storage_id;description_id
-1;512 GB,Space Grey,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;26499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;2;1;1;2;1
-2;512 GB,Silver,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;26499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;3;1;1;2;1
-3;512 GB,Midnight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;26499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;1;1;1;2;1
-4;512 GB,Starlight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;26499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;4;1;1;2;1
-5;256 GB,Midnight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;22499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;1;1;1;1;1
-6;512 GB,Midnight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),24 GB;29499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;1;1;2;2;1
-7;256 GB,Space Grey,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;22499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;2;1;1;1;1
-8;512 GB,Space Grey,Apple M3 Chip (CPU 8-Core, GPU 10-Core),24 GB;29499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;2;1;2;2;1
-9;256 GB,Silver,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;22499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;3;1;1;1;1
-10;512 GB,Silver,Apple M3 Chip (CPU 8-Core, GPU 10-Core),24 GB;29499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;3;1;2;2;1
-11;256 GB,Starlight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;22499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;4;1;1;1;1
-12;512 GB,Starlight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),24 GB;29499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2.jpg;1;4;1;2;2;1
+id;name;price;thumbnail;product_id;color_id;processor_id;memory_id;storage_id;description_id;screen_id;connectivity_id;material_id;case_size_id;strap_size_id;strap_color_id
+1;512 GB,Space Grey,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;26499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_space_gray_1_2_1.jpg;1;1;4;2;2;1;;;;;;
+2;512 GB,Silver,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;26499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_silver_1_2_1.jpg;1;2;4;2;2;1;;;;;;
+3;512 GB,Midnight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;26499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2_1.jpg;1;3;4;2;2;1;;;;;;
+4;512 GB,Starlight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;26499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_starlight_1_2_1.jpg;1;4;4;2;2;1;;;;;;
+5;256 GB,Midnight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;22499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2_1.jpg;1;3;4;2;1;1;;;;;;
+6;512 GB,Midnight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),24 GB;29499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_midnight_1_2_1.jpg;1;3;4;4;2;1;;;;;;
+7;256 GB,Space Grey,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;22499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_space_gray_1_2_1.jpg;1;1;4;2;1;1;;;;;;
+8;512 GB,Space Grey,Apple M3 Chip (CPU 8-Core, GPU 10-Core),24 GB;29499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_space_gray_1_2_1.jpg;1;1;4;4;2;1;;;;;;
+9;256 GB,Silver,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;22499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_silver_1_2_1.jpg;1;2;4;2;1;1;;;;;;
+10;512 GB,Silver,Apple M3 Chip (CPU 8-Core, GPU 10-Core),24 GB;29499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_silver_1_2_1.jpg;1;2;4;4;2;1;;;;;;
+11;256 GB,Starlight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;22499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_starlight_1_2_1.jpg;1;4;4;2;1;1;;;;;;
+12;512 GB,Starlight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),24 GB;29499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_15_inci_m3_2024_starlight_1_2_1.jpg;1;4;4;4;2;1;;;;;;
+13;256 GB,Midnight,Apple M2 Chip (CPU 8-Core, GPU 8-Core),16 GB;16999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_13_inci_m3_2024_midnight_1_2_1.jpg;2;3;2;2;1;2;;;;;;
+14;256 GB,Space Grey,Apple M2 Chip (CPU 8-Core, GPU 8-Core),16 GB;16999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_13_inci_m3_2024_space_gray_1_3.jpg;2;1;2;2;1;2;;;;;;
+15;256 GB,Starlight,Apple M2 Chip (CPU 8-Core, GPU 8-Core),16 GB;16999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_13_inci_m3_2024_starlight_1_2_1.jpg;2;4;2;2;1;2;;;;;;
+16;256 GB,Midnight,Apple M3 Chip (CPU 8-Core, GPU 8-Core),16 GB;18999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_13_inci_m3_2024_midnight_1_2_1.jpg;2;3;3;2;1;2;;;;;;
+17;256 GB,Space Grey,Apple M3 Chip (CPU 8-Core, GPU 8-Core),16 GB;18999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_13_inci_m3_2024_space_gray_1_3.jpg;2;1;3;2;1;2;;;;;;
+18;256 GB,Silver,Apple M3 Chip (CPU 8-Core, GPU 8-Core),16 GB;18999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_13_inci_m3_2024_silver_1_2_1.jpg;2;2;3;2;1;2;;;;;;
+19;256 GB,Starlight,Apple M3 Chip (CPU 8-Core, GPU 8-Core),16 GB;18999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_13_inci_m3_2024_starlight_1_2_1.jpg;2;4;3;2;1;2;;;;;;
+20;512 GB,Midnight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;22999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_13_inci_m3_2024_midnight_1_2_1.jpg;2;3;4;2;2;2;;;;;;
+21;512 GB,Space Grey,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;22999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_13_inci_m3_2024_space_gray_1_3.jpg;2;1;4;2;2;2;;;;;;
+22;512 GB,Silver,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;22999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_13_inci_m3_2024_silver_1_2_1.jpg;2;2;4;2;2;2;;;;;;
+23;512 GB,Starlight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),16 GB;22999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_13_inci_m3_2024_starlight_1_2_1.jpg;2;4;4;2;2;2;;;;;;
+24;512 GB,Midnight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),24 GB;25999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_13_inci_m3_2024_midnight_1_2_1.jpg;2;3;4;4;2;2;;;;;;
+25;512 GB,Space Grey,Apple M3 Chip (CPU 8-Core, GPU 10-Core),24 GB;25999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_13_inci_m3_2024_space_gray_1_3.jpg;2;1;4;4;2;2;;;;;;
+26;512 GB,Silver,Apple M3 Chip (CPU 8-Core, GPU 10-Core),24 GB;25999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_13_inci_m3_2024_silver_1_2_1.jpg;2;2;4;4;2;2;;;;;;
+27;512 GB,Starlight,Apple M3 Chip (CPU 8-Core, GPU 10-Core),24 GB;25999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_macbook_air_13_inci_m3_2024_starlight_1_2_1.jpg;2;4;4;4;2;2;;;;;;
+28;256 GB,Space Grey,Apple M1 Chip (CPU 8-Core, GPU 7-Core),8 GB;11999000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_air_m1_space_gray_1.jpg;3;3;1;1;1;3;;;;;;
+29;256 GB,Silver,Apple M1 Chip (CPU 8-Core, GPU 7-Core),8 GB;11999000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_air_m1_silver_1.jpg;3;2;1;1;1;3;;;;;;
+30;256 GB,Gold,Apple M1 Chip (CPU 8-Core, GPU 7-Core),8 GB;11999000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_air_m1_gold_1.jpg;3;5;1;1;1;3;;;;;;
+31;1 TB,Silver,Apple M3 Max Chip (CPU 14-Core, GPU 30-Core),36 GB;57999000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_pro_16-inch_m3_pro_max_silver_1_1_2.jpg;4;2;7;5;3;4;;;;;;
+32;1 TB,Space Black,Apple M3 Max Chip (CPU 14-Core, GPU 30-Core),36 GB;57999000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_pro_16-inch_m3_pro_max_space_black_1_1_2.jpg;4;6;7;5;3;4;;;;;;
+33;1 TB,Silver,Apple M3 Max Chip (CPU 16-Core, GPU 40-Core),48 GB;66499000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_pro_16-inch_m3_pro_max_silver_1_1_2.jpg;4;2;8;6;3;4;;;;;;
+34;1 TB,Space Black,Apple M3 Max Chip (CPU 16-Core, GPU 40-Core),48 GB;66499000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_pro_16-inch_m3_pro_max_space_black_1_1_2.jpg;4;6;8;6;3;4;;;;;;
+35;512 GB,Silver,Apple M3 Pro Chip (CPU 12-Core, GPU 18-Core),18 GB;40999000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_pro_16-inch_m3_pro_max_silver_1_1.jpg;5;2;6;3;2;4;;;;;;
+36;512 GB,Space Black,Apple M3 Pro Chip (CPU 12-Core, GPU 18-Core),18 GB;40999000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_pro_16-inch_m3_pro_max_space_black_1_1.jpg;5;6;6;3;2;4;;;;;;
+37;512 GB,Silver,Apple M3 Pro Chip (CPU 12-Core, GPU 18-Core),36 GB;47499000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_pro_16-inch_m3_pro_max_silver_1_1.jpg;5;2;6;5;2;4;;;;;;
+38;512 GB,Space Black,Apple M3 Pro Chip (CPU 12-Core, GPU 18-Core),36 GB;47499000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_pro_16-inch_m3_pro_max_space_black_1_1.jpg;5;6;6;5;2;4;;;;;;
+39;1 TB,Silver,Apple M3 Max Chip (CPU 14-Core, GPU 30-Core),36 GB;56499000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_pro_14-inch_m3_pro_max_silver_1_3.jpg;6;2;7;5;3;6;;;;;;
+40;1 TB,Space Black,Apple M3 Max Chip (CPU 14-Core, GPU 30-Core),36 GB;56499000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_pro_14-inch_m3_pro_max_space_black_1_3.jpg;6;6;7;5;3;6;;;;;;
+41;512 GB,Silver,Apple M3 Pro Chip (CPU 11-Core, GPU 14-Core),18 GB;32999000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_pro_14-inch_m3_pro_max_silver_1_1.jpg;7;2;5;3;2;7;;;;;;
+42;512 GB,Space Black,Apple M3 Pro Chip (CPU 11-Core, GPU 14-Core),18 GB;32999000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_pro_14-inch_m3_pro_max_space_black_1_1.jpg;7;6;5;3;2;7;;;;;;
+43;1 TB,Silver,Apple M3 Pro Chip (CPU 12-Core, GPU 18-Core),18 GB;39999000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_pro_14-inch_m3_pro_max_silver_1_1.jpg;7;2;6;3;3;7;;;;;;
+44;1 TB,Space Black,Apple M3 Pro Chip (CPU 12-Core, GPU 18-Core),18 GB;39999000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_pro_14-inch_m3_pro_max_space_black_1_1.jpg;7;6;6;3;3;7;;;;;;
+45;512 GB,Space Grey,Apple M3 Chip (CPU 8-Core, GPU 10-Core),8 GB;25999000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_pro_14-inch_m3_space_grey_1_1.jpg;8;1;4;1;2;8;;;;;;
+46;512 GB,Silver,Apple M3 Chip (CPU 8-Core, GPU 10-Core),8 GB;25999000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_pro_14-inch_m3_silver_1_1.jpg;8;2;4;1;2;8;;;;;;
+47;1 TB,Space Grey,Apple M3 Chip (CPU 8-Core, GPU 10-Core),8 GB;29499000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_pro_14-inch_m3_space_grey_1_1.jpg;8;1;4;1;3;8;;;;;;
+48;1 TB,Silver,Apple M3 Chip (CPU 8-Core, GPU 10-Core),8 GB;29499000;https://cdnpro.eraspace.com/media/catalog/product/m/a/macbook_pro_14-inch_m3_silver_1_1.jpg;8;2;4;1;3;8;;;;;;
+49;256 GB,Blue,Apple M3 Chip (CPU 8-Core, GPU 8-Core),8 GB;20499000;https://cdnpro.eraspace.com/media/catalog/product/i/m/imac_24-inch_m3_2-port_blue_1.jpg;11;7;3;1;1;11;;;;;;
+50;256 GB,Blue,Apple M3 Chip (CPU 8-Core, GPU 10-Core),8 GB;23999000;https://cdnpro.eraspace.com/media/catalog/product/i/m/imac_24-inch_m3_2-port_blue_1.jpg;11;7;4;1;1;11;;;;;;
+51;256 GB,Green,Apple M3 Chip (CPU 8-Core, GPU 8-Core),8 GB;20499000;https://cdnpro.eraspace.com/media/catalog/product/i/m/imac_24-inch_m3_2-port_green_1.jpg;11;8;3;1;1;11;;;;;;
+52;256 GB,Green,Apple M3 Chip (CPU 8-Core, GPU 10-Core),8 GB;23999000;https://cdnpro.eraspace.com/media/catalog/product/i/m/imac_24-inch_m3_2-port_green_1.jpg;11;8;4;1;1;11;;;;;;
+53;256 GB,Pink,Apple M3 Chip (CPU 8-Core, GPU 8-Core),8 GB;20499000;https://cdnpro.eraspace.com/media/catalog/product/i/m/imac_24-inch_m3_2-port_pink_1.jpg;11;9;3;1;1;11;;;;;;
+54;256 GB,Pink,Apple M3 Chip (CPU 8-Core, GPU 10-Core),8 GB;23999000;https://cdnpro.eraspace.com/media/catalog/product/i/m/imac_24-inch_m3_2-port_pink_1.jpg;11;9;4;1;1;11;;;;;;
+55;256 GB,Silver,Apple M3 Chip (CPU 8-Core, GPU 8-Core),8 GB;20499000;https://cdnpro.eraspace.com/media/catalog/product/i/m/imac_24-inch_m3_2-port_silver_1.jpg;11;10;3;1;1;11;;;;;;
+56;256 GB,Silver,Apple M3 Chip (CPU 8-Core, GPU 10-Core),8 GB;23999000;https://cdnpro.eraspace.com/media/catalog/product/i/m/imac_24-inch_m3_2-port_silver_1.jpg;11;10;4;1;1;11;;;;;;
+57;512 GB,Blue,Apple M3 Chip (CPU 8-Core, GPU 10-Core),8 GB;26999000;https://cdnpro.eraspace.com/media/catalog/product/i/m/imac_24-inch_m3_2-port_blue_1.jpg;11;7;4;1;2;11;;;;;;
+58;512 GB,Green,Apple M3 Chip (CPU 8-Core, GPU 10-Core),8 GB;26999000;https://cdnpro.eraspace.com/media/catalog/product/i/m/imac_24-inch_m3_2-port_green_1.jpg;11;8;4;1;2;11;;;;;;
+59;512 GB,Pink,Apple M3 Chip (CPU 8-Core, GPU 10-Core),8 GB;26999000;https://cdnpro.eraspace.com/media/catalog/product/i/m/imac_24-inch_m3_2-port_pink_1.jpg;11;9;4;1;2;11;;;;;;
+60;256 GB,Silver,Standard Glass,Wi-Fi;24999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_silver_1_5.jpg;12;11;;;1;12;1;1;;;;
+61;256 GB,Space Black,Standard Glass,Wi-Fi;24999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_space_black_1_5.jpg;12;12;;;1;12;1;1;;;;
+62;256 GB,Silver,Standard Glass,Wi-Fi + Cellular;30999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_silver_1_5.jpg;12;11;;;1;12;1;2;;;;
+63;256 GB,Space Black,Standard Glass,Wi-Fi + Cellular;30999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_space_black_1_5.jpg;12;12;;;1;12;1;2;;;;
+64;512 GB,Silver,Standard Glass,Wi-Fi;29499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_silver_1_5.jpg;12;11;;;2;12;1;1;;;;
+65;512 GB,Space Black,Standard Glass,Wi-Fi;29499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_space_black_1_5.jpg;12;12;;;2;12;1;1;;;;
+66;512 GB,Silver,Standard Glass,Wi-Fi + Cellular;34999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_silver_1_5.jpg;12;11;;;2;12;1;2;;;;
+67;512 GB,Space Black,Standard Glass,Wi-Fi + Cellular;34999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_space_black_1_5.jpg;12;12;;;2;12;1;2;;;;
+68;1 TB,Silver,Standard Glass,Wi-Fi;38499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_silver_1_5.jpg;12;11;;;3;12;1;1;;;;
+69;1 TB,Space Black,Standard Glass,Wi-Fi;38499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_space_black_1_5.jpg;12;12;;;3;12;1;1;;;;
+70;1 TB,Silver,Standard Glass,Wi-Fi + Cellular;42999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_silver_1_5.jpg;12;11;;;3;12;1;2;;;;
+71;1 TB,Space Black,Standard Glass,Wi-Fi + Cellular;42999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_space_black_1_5.jpg;12;12;;;3;12;1;2;;;;
+72;1 TB,Silver,Nano-texture Glass,Wi-Fi;39999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_silver_1_5.jpg;12;11;;;3;12;2;1;;;;
+73;1 TB,Space Black,Nano-texture Glass,Wi-Fi;39999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_space_black_1_5.jpg;12;12;;;3;12;2;1;;;;
+74;1 TB,Silver,Nano-texture Glass,Wi-Fi + Cellular;45499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_silver_1_5.jpg;12;11;;;3;12;2;2;;;;
+75;1 TB,Space Black,Nano-texture Glass,Wi-Fi + Cellular;45499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_space_black_1_5.jpg;12;12;;;3;12;2;2;;;;
+76;2 TB,Silver,Standard Glass,Wi-Fi;46499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_silver_1_5.jpg;12;11;;;4;12;1;1;;;;
+77;2 TB,Space Black,Standard Glass,Wi-Fi;46499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_space_black_1_5.jpg;12;12;;;4;12;1;1;;;;
+78;2 TB,Silver,Standard Glass,Wi-Fi + Cellular;50999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_silver_1_5.jpg;12;11;;;4;12;1;2;;;;
+79;2 TB,Space Black,Standard Glass,Wi-Fi + Cellular;50999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_space_black_1_5.jpg;12;12;;;4;12;1;2;;;;
+80;2 TB,Silver,Nano-texture Glass,Wi-Fi;47999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_silver_1_5.jpg;12;11;;;4;12;2;1;;;;
+81;2 TB,Space Black,Nano-texture Glass,Wi-Fi;47999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_space_black_1_5.jpg;12;12;;;4;12;2;1;;;;
+82;2 TB,Silver,Nano-texture Glass,Wi-Fi + Cellular;53499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_silver_1_5.jpg;12;11;;;4;12;2;2;;;;
+83;2 TB,Space Black,Nano-texture Glass,Wi-Fi + Cellular;53499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_13-inch_m4_wi-fi_space_black_1_5.jpg;12;12;;;4;12;2;2;;;;
+84;256 GB,Silver,Standard Glass,Wi-Fi;18999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_silver_1_5.jpg;13;11;;;1;13;1;1;;;;
+85;256 GB,Space Black,Standard Glass,Wi-Fi;18999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_space_black_1_5.jpg;13;12;;;1;13;1;1;;;;
+86;256 GB,Silver,Standard Glass,Wi-Fi + Cellular;23999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_silver_1_5.jpg;13;11;;;1;13;1;2;;;;
+87;256 GB,Space Black,Standard Glass,Wi-Fi + Cellular;23999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_space_black_1_5.jpg;13;12;;;1;13;1;2;;;;
+88;512 GB,Silver,Standard Glass,Wi-Fi;23499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_silver_1_5.jpg;13;11;;;2;13;1;1;;;;
+89;512 GB,Space Black,Standard Glass,Wi-Fi;23499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_space_black_1_5.jpg;13;12;;;2;13;1;1;;;;
+90;512 GB,Silver,Standard Glass,Wi-Fi + Cellular;27999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_silver_1_5.jpg;13;11;;;2;13;1;2;;;;
+91;512 GB,Space Black,Standard Glass,Wi-Fi + Cellular;27999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_space_black_1_5.jpg;13;12;;;2;13;1;2;;;;
+92;1 TB,Silver,Standard Glass,Wi-Fi;31499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_silver_1_5.jpg;13;11;;;3;13;1;;;;;
+93;1 TB,Space Black,Standard Glass,Wi-Fi;31499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_space_black_1_5.jpg;13;12;;;3;13;1;1;;;;
+94;1 TB,Silver,Standard Glass,Wi-Fi + Cellular;35999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_silver_1_5.jpg;13;11;;;3;13;1;2;;;;
+95;1 TB,Space Black,Standard Glass,Wi-Fi + Cellular;35999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_space_black_1_5.jpg;13;12;;;3;13;1;2;;;;
+96;1 TB,Silver,Nano-texture Glass,Wi-Fi;33499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_silver_1_5.jpg;13;11;;;3;13;2;1;;;;
+97;1 TB,Space Black,Nano-texture Glass,Wi-Fi;33499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_space_black_1_5.jpg;13;12;;;3;13;2;1;;;;
+98;1 TB,Silver,Nano-texture Glass,Wi-Fi + Cellular;37999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_silver_1_5.jpg;13;11;;;3;13;2;2;;;;
+99;1 TB,Space Black,Nano-texture Glass,Wi-Fi + Cellular;37999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_space_black_1_5.jpg;13;12;;;3;13;2;2;;;;
+100;2 TB,Silver,Standard Glass,Wi-Fi;39499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_silver_1_5.jpg;13;11;;;4;13;1;1;;;;
+101;2 TB,Space Black,Standard Glass,Wi-Fi;39499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_space_black_1_5.jpg;13;12;;;4;13;1;1;;;;
+102;2 TB,Silver,Standard Glass,Wi-Fi + Cellular;43999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_silver_1_5.jpg;13;11;;;4;13;1;2;;;;
+103;2 TB,Space Black,Standard Glass,Wi-Fi + Cellular;43999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_space_black_1_5.jpg;13;12;;;4;13;1;2;;;;
+104;2 TB,Silver,Nano-texture Glass,Wi-Fi;41499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_silver_1_5.jpg;13;11;;;4;13;2;1;;;;
+105;2 TB,Space Black,Nano-texture Glass,Wi-Fi;41499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_space_black_1_5.jpg;13;12;;;4;13;2;1;;;;
+106;2 TB,Silver,Nano-texture Glass,Wi-Fi + Cellular;45999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_silver_1_5.jpg;13;11;;;4;13;2;2;;;;
+107;2 TB,Space Black,Nano-texture Glass,Wi-Fi + Cellular;45999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_11-inch_m4_wi-fi_space_black_1_5.jpg;13;12;;;4;13;2;2;;;;
+108;128 GB,Wi-Fi,Space Grey;13749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_4_11_inci_wi-fi_space_grey_1.jpg;14;13;;;5;14;;1;;;;
+109;128 GB,Wi-Fi,Silver;13749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_4_11_inci_wi-fi_silver_1.jpg;14;14;;;5;14;;1;;;;
+110;128 GB,Wi-Fi + Cellular,Space Grey;16749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_4_11_inci_wi-fi_space_grey_1.jpg;14;13;;;5;14;;2;;;;
+111;128 GB,Wi-Fi + Cellular,Silver;16749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_4_11_inci_wi-fi_silver_1.jpg;14;14;;;5;14;;2;;;;
+112;256 GB,Wi-Fi,Space Grey;15749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_4_11_inci_wi-fi_space_grey_1.jpg;14;13;;;1;14;;1;;;;
+113;256 GB,Wi-Fi,Silver;15749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_4_11_inci_wi-fi_silver_1.jpg;14;14;;;1;14;;1;;;;
+114;256 GB,Wi-Fi + Cellular,Space Grey;18749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_4_11_inci_wi-fi_space_grey_1.jpg;14;13;;;1;14;;2;;;;
+115;256 GB,Wi-Fi + Cellular,Silver;18749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_4_11_inci_wi-fi_silver_1.jpg;14;14;;;1;14;;2;;;;
+116;512 GB,Wi-Fi,Space Grey;19749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_4_11_inci_wi-fi_space_grey_1.jpg;14;13;;;2;14;;1;;;;
+117;512 GB,Wi-Fi,Silver;19749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_4_11_inci_wi-fi_silver_1.jpg;14;14;;;2;14;;1;;;;
+118;512 GB,Wi-Fi + Cellular,Space Grey;22749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_4_11_inci_wi-fi_space_grey_1.jpg;14;13;;;2;14;;2;;;;
+119;512 GB,Wi-Fi + Cellular,Silver;22749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_4_11_inci_wi-fi_silver_1.jpg;14;14;;;2;14;;2;;;;
+120;1 TB,Wi-Fi,Space Grey;28249000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_4_11_inci_wi-fi_space_grey_1.jpg;14;13;;;3;14;;1;;;;
+121;1 TB,Wi-Fi,Silver;28249000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_4_11_inci_wi-fi_silver_1.jpg;14;14;;;3;14;;1;;;;
+122;1 TB,Wi-Fi + Cellular,Space Grey;31249000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_4_11_inci_wi-fi_space_grey_1.jpg;14;13;;;3;14;;2;;;;
+123;1 TB,Wi-Fi + Cellular,Silver;31249000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_4_11_inci_wi-fi_silver_1.jpg;14;14;;;3;14;;2;;;;
+124;2 TB,Wi-Fi,Space Grey;36249000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_4_11_inci_wi-fi_space_grey_1.jpg;14;13;;;4;14;;1;;;;
+125;2 TB,Wi-Fi + Cellular,Space Grey;38749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_4_11_inci_wi-fi_space_grey_1.jpg;14;13;;;4;14;;2;;;;
+126;2 TB,Wi-Fi + Cellular,Silver;38749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_4_11_inci_wi-fi_silver_1.jpg;14;14;;;4;14;;2;;;;
+127;128 GB,Wi-Fi,Silver;19749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_6_12_9_inci_wi-fi_silver_1.jpg;15;14;;;5;15;;1;;;;
+128;128 GB,Wi-Fi,Space Grey;19749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_6_12_9_inci_wi-fi_space_grey_1.jpg;15;13;;;5;15;;1;;;;
+129;128 GB,Wi-Fi + Cellular,Silver;22749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_6_12_9_inci_wi-fi_silver_1.jpg;15;14;;;5;15;;2;;;;
+130;128 GB,Wi-Fi + Cellular,Space Grey;22749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_6_12_9_inci_wi-fi_space_grey_1.jpg;15;13;;;5;15;;2;;;;
+131;256 GB,Wi-Fi,Silver;21749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_6_12_9_inci_wi-fi_silver_1.jpg;15;14;;;1;15;;1;;;;
+132;256 GB,Wi-Fi,Space Grey;21749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_6_12_9_inci_wi-fi_space_grey_1.jpg;15;13;;;1;15;;1;;;;
+133;256 GB,Wi-Fi + Cellular,Silver;24749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_6_12_9_inci_wi-fi_silver_1.jpg;15;14;;;1;15;;2;;;;
+134;256 GB,Wi-Fi + Cellular,Space Grey;24749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_6_12_9_inci_wi-fi_space_grey_1.jpg;15;13;;;1;15;;2;;;;
+135;512 GB,Wi-Fi,Silver;25749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_6_12_9_inci_wi-fi_silver_1.jpg;15;14;;;2;15;;1;;;;
+136;512 GB,Wi-Fi,Space Grey;25749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_6_12_9_inci_wi-fi_space_grey_1.jpg;15;13;;;2;15;;1;;;;
+137;512 GB,Wi-Fi + Cellular,Silver;28749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_6_12_9_inci_wi-fi_silver_1.jpg;15;14;;;2;15;;2;;;;
+138;512 GB,Wi-Fi + Cellular,Space Grey;28749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_6_12_9_inci_wi-fi_space_grey_1.jpg;15;13;;;2;15;;2;;;;
+139;1 TB,Wi-Fi,Silver;33749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_6_12_9_inci_wi-fi_silver_1.jpg;15;14;;;3;15;;1;;;;
+140;1 TB,Wi-Fi,Space Grey;33749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_6_12_9_inci_wi-fi_space_grey_1.jpg;15;13;;;3;15;;1;;;;
+141;1 TB,Wi-Fi + Cellular,Silver;36749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_6_12_9_inci_wi-fi_silver_1.jpg;15;14;;;3;15;;2;;;;
+142;1 TB,Wi-Fi + Cellular,Space Grey;36749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_6_12_9_inci_wi-fi_space_grey_1.jpg;15;13;;;3;15;;2;;;;
+143;2 TB,Wi-Fi,Silver;42749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_6_12_9_inci_wi-fi_silver_1.jpg;15;14;;;4;15;;1;;;;
+144;2 TB,Wi-Fi,Space Grey;42749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_6_12_9_inci_wi-fi_space_grey_1.jpg;15;13;;;4;15;;1;;;;
+145;2 TB,Wi-Fi + Cellular,Silver;45749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_6_12_9_inci_wi-fi_silver_1.jpg;15;14;;;4;15;;2;;;;
+146;2 TB,Wi-Fi + Cellular,Space Grey;45749000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_pro_gen_6_12_9_inci_wi-fi_space_grey_1.jpg;15;13;;;4;15;;2;;;;
+147;128 GB,Wi-Fi,Silver;19799000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_12.9-inci_wi-fi_silver_1_2.jpg;16;14;;;5;16;;1;;;;
+148;128 GB,Wi-Fi,Space Grey;19799000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_12.9-inci_wi-fi_space_grey_1_1.jpg;16;13;;;5;16;;1;;;;
+149;128 GB,Wi-Fi + Cellular,Silver;22499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_12.9-inci_wi-fi_silver_1_2.jpg;16;14;;;5;16;;2;;;;
+150;128 GB,Wi-Fi + Cellular,Space Grey;22499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_12.9-inci_wi-fi_space_grey_1_1.jpg;16;13;;;5;16;;2;;;;
+151;256 GB,Wi-Fi,Silver;21499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_12.9-inci_wi-fi_silver_1_2.jpg;16;14;;;1;16;;1;;;;
+152;256 GB,Wi-Fi,Space Grey;21499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_12.9-inci_wi-fi_space_grey_1_1.jpg;16;13;;;1;16;;1;;;;
+153;256 GB,Wi-Fi + Cellular,Silver;23999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_12.9-inci_wi-fi_silver_1_2.jpg;16;14;;;1;16;;2;;;;
+154;256 GB,Wi-Fi + Cellular,Space Grey;23999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_12.9-inci_wi-fi_space_grey_1_1.jpg;16;13;;;1;16;;2;;;;
+155;512 GB,Wi-Fi,Silver;25199000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_12.9-inci_wi-fi_silver_1_2.jpg;16;14;;;2;16;;1;;;;
+156;512 GB,Wi-Fi,Space Grey;25199000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_12.9-inci_wi-fi_space_grey_1_1.jpg;16;13;;;2;16;;1;;;;
+157;512 GB,Wi-Fi + Cellular,Silver;27799000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_12.9-inci_wi-fi_silver_1_2.jpg;16;14;;;2;16;;2;;;;
+158;512 GB,Wi-Fi + Cellular,Space Grey;27799000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_12.9-inci_wi-fi_space_grey_1_1.jpg;16;13;;;2;16;;2;;;;
+159;1 TB,Wi-Fi,Space Grey;31999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_12.9-inci_wi-fi_space_grey_1_1.jpg;16;13;;;3;16;;1;;;;
+160;1 TB,Wi-Fi + Cellular,Silver;34999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_12.9-inci_wi-fi_silver_1_2.jpg;16;14;;;3;16;;2;;;;
+161;1 TB,Wi-Fi + Cellular,Space Grey;34999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_12.9-inci_wi-fi_space_grey_1_1.jpg;16;13;;;3;16;;2;;;;
+162;2 TB,Wi-Fi,Silver;38999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_12.9-inci_wi-fi_silver_1_2.jpg;16;14;;;4;16;;1;;;;
+163;2 TB,Wi-Fi + Cellular,Silver;41999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_12.9-inci_wi-fi_silver_1_2.jpg;16;14;;;4;16;;2;;;;
+164;2 TB,Wi-Fi + Cellular,Space Grey;41999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_12.9-inci_wi-fi_space_grey_1_1.jpg;16;13;;;4;16;;2;;;;
+165;128 GB,Wi-Fi,Silver;14299000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_11-inci_wi-fi_silver_1_1.jpg;17;14;;;5;17;;1;;;;
+166;128 GB,Wi-Fi,Space Grey;14299000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_11-inci_wi-fi_space_grey_1_1.jpg;17;13;;;5;17;;1;;;;
+167;128 GB,Wi-Fi + Cellular,Silver;16999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_11-inci_wi-fi_silver_1_1.jpg;17;14;;;5;17;;2;;;;
+168;128 GB,Wi-Fi + Cellular,Space Grey;16999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_11-inci_wi-fi_space_grey_1_1.jpg;17;13;;;5;17;;2;;;;
+169;256 GB,Wi-Fi,Silver;16199000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_11-inci_wi-fi_silver_1_1.jpg;17;14;;;1;17;;1;;;;
+170;256 GB,Wi-Fi,Space Grey;16199000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_11-inci_wi-fi_space_grey_1_1.jpg;17;13;;;1;17;;1;;;;
+171;256 GB,Wi-Fi + Cellular,Silver;18799000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_11-inci_wi-fi_silver_1_1.jpg;17;14;;;1;17;;2;;;;
+172;256 GB,Wi-Fi + Cellular,Space Grey;18799000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_11-inci_wi-fi_space_grey_1_1.jpg;17;13;;;1;17;;2;;;;
+173;512 GB,Wi-Fi,Silver;19699000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_11-inci_wi-fi_silver_1_1.jpg;17;14;;;2;17;;1;;;;
+174;512 GB,Wi-Fi,Space Grey;19699000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_11-inci_wi-fi_space_grey_1_1.jpg;17;13;;;2;17;;1;;;;
+175;512 GB,Wi-Fi + Cellular,Silver;22499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_11-inci_wi-fi_silver_1_1.jpg;17;14;;;2;17;;2;;;;
+176;512 GB,Wi-Fi + Cellular,Space Grey;22499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_11-inci_wi-fi_space_grey_1_1.jpg;17;13;;;2;17;;2;;;;
+177;1 TB,Wi-Fi,Silver;26799000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_11-inci_wi-fi_silver_1_1.jpg;17;14;;;3;17;;1;;;;
+178;1 TB,Wi-Fi,Space Grey;26799000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_11-inci_wi-fi_space_grey_1_1.jpg;17;13;;;3;17;;1;;;;
+179;1 TB,Wi-Fi + Cellular,Silver;29499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_11-inci_wi-fi_silver_1_1.jpg;17;14;;;3;17;;2;;;;
+180;1 TB,Wi-Fi + Cellular,Space Grey;29499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_11-inci_wi-fi_space_grey_1_1.jpg;17;13;;;3;17;;2;;;;
+181;2 TB,Wi-Fi,Silver;33999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_11-inci_wi-fi_silver_1_1.jpg;17;14;;;4;17;;1;;;;
+182;2 TB,Wi-Fi,Space Grey;33999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_11-inci_wi-fi_space_grey_1_1.jpg;17;13;;;4;17;;1;;;;
+183;2 TB,Wi-Fi + Cellular,Silver;35999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_11-inci_wi-fi_silver_1_1.jpg;17;14;;;4;17;;2;;;;
+184;2 TB,Wi-Fi + Cellular,Space Grey;35999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_ipad_pro_2021_11-inci_wi-fi_space_grey_1_1.jpg;17;13;;;4;17;;2;;;;
+185;128 GB,Space Gray,Wi-Fi;14999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_space_gray_1_3.jpg;18;15;;;5;18;;1;;;;
+186;128 GB,Blue,Wi-Fi;14999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_blue_1_3.jpg;18;16;;;5;18;;1;;;;
+187;128 GB,Purple,Wi-Fi;14999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_purple_1_3.jpg;18;17;;;5;18;;1;;;;
+188;128 GB,Starlight,Wi-Fi;14999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_starlight_1_3.jpg;18;18;;;5;18;;1;;;;
+189;128 GB,Space Gray,Wi-Fi + Cellular;18499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_space_gray_1_3.jpg;18;15;;;5;18;;2;;;;
+190;128 GB,Blue,Wi-Fi + Cellular;18499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_blue_1_3.jpg;18;16;;;5;18;;2;;;;
+191;128 GB,Purple,Wi-Fi + Cellular;18499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_purple_1_3.jpg;18;17;;;5;18;;2;;;;
+192;128 GB,Starlight,Wi-Fi + Cellular;18499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_starlight_1_3.jpg;18;18;;;5;18;;2;;;;
+193;256 GB,Space Gray,Wi-Fi;17499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_space_gray_1_3.jpg;18;15;;;1;18;;1;;;;
+194;256 GB,Blue,Wi-Fi;17499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_blue_1_3.jpg;18;16;;;1;18;;1;;;;
+195;256 GB,Purple,Wi-Fi;17499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_purple_1_3.jpg;18;17;;;1;18;;1;;;;
+196;256 GB,Starlight,Wi-Fi;17499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_starlight_1_3.jpg;18;18;;;1;18;;1;;;;
+197;256 GB,Space Gray,Wi-Fi + Cellular;20499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_space_gray_1_3.jpg;18;15;;;1;18;;2;;;;
+198;256 GB,Blue,Wi-Fi + Cellular;20499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_blue_1_3.jpg;18;16;;;1;18;;2;;;;
+199;256 GB,Purple,Wi-Fi + Cellular;20499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_purple_1_3.jpg;18;17;;;1;18;;2;;;;
+200;256 GB,Starlight,Wi-Fi + Cellular;20499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_starlight_1_3.jpg;18;18;;;1;18;;2;;;;
+201;512 GB,Space Gray,Wi-Fi;21499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_space_gray_1_3.jpg;18;15;;;2;18;;1;;;;
+202;512 GB,Blue,Wi-Fi;21499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_blue_1_3.jpg;18;16;;;2;18;;1;;;;
+203;512 GB,Purple,Wi-Fi;21499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_purple_1_3.jpg;18;17;;;2;18;;1;;;;
+204;512 GB,Starlight,Wi-Fi;21499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_starlight_1_3.jpg;18;18;;;2;18;;1;;;;
+205;512 GB,Space Gray,Wi-Fi + Cellular;24499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_space_gray_1_3.jpg;18;15;;;2;18;;2;;;;
+206;512 GB,Blue,Wi-Fi + Cellular;24499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_blue_1_3.jpg;18;16;;;2;18;;2;;;;
+207;512 GB,Purple,Wi-Fi + Cellular;24499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_purple_1_3.jpg;18;17;;;2;18;;2;;;;
+208;512 GB,Starlight,Wi-Fi + Cellular;24499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_starlight_1_3.jpg;18;18;;;2;18;;2;;;;
+209;1 TB,Space Gray,Wi-Fi;25499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_space_gray_1_3.jpg;18;15;;;3;18;;1;;;;
+210;1 TB,Blue,Wi-Fi;25499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_blue_1_3.jpg;18;16;;;3;18;;1;;;;
+211;1 TB,Purple,Wi-Fi;25499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_purple_1_3.jpg;18;17;;;3;18;;1;;;;
+212;1 TB,Starlight,Wi-Fi;25499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_starlight_1_3.jpg;18;18;;;3;18;;1;;;;
+213;1 TB,Space Gray,Wi-Fi + Cellular;28499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_space_gray_1_3.jpg;18;15;;;3;18;;2;;;;
+214;1 TB,Blue,Wi-Fi + Cellular;28499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_blue_1_3.jpg;18;16;;;3;18;;2;;;;
+215;1 TB,Purple,Wi-Fi + Cellular;28499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_purple_1_3.jpg;18;17;;;3;18;;2;;;;
+216;1 TB,Starlight,Wi-Fi + Cellular;28499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_13-inch_m2_wifi_starlight_1_3.jpg;18;18;;;3;18;;2;;;;
+217;128 GB,Space Gray,Wi-Fi;11499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_space_gray_1_1.jpg;19;15;;;5;19;;1;;;;
+218;128 GB,Blue,Wi-Fi;11499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_blue_1_1.jpg;19;16;;;5;19;;1;;;;
+219;128 GB,Purple,Wi-Fi;11499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_purple_1_1.jpg;19;17;;;5;19;;1;;;;
+220;128 GB,Starlight,Wi-Fi;11499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_starlight_1_1.jpg;19;18;;;5;19;;1;;;;
+221;128 GB,Space Gray,Wi-Fi + Cellular;14499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_space_gray_1_1.jpg;19;15;;;5;19;;2;;;;
+222;128 GB,Blue,Wi-Fi + Cellular;14499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_blue_1_1.jpg;19;16;;;5;19;;2;;;;
+223;128 GB,Purple,Wi-Fi + Cellular;14499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_purple_1_1.jpg;19;17;;;5;19;;2;;;;
+224;128 GB,Starlight,Wi-Fi + Cellular;14499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_starlight_1_1.jpg;19;18;;;5;19;;2;;;;
+225;256 GB,Space Gray,Wi-Fi;13499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_space_gray_1_1.jpg;19;15;;;1;19;;1;;;;
+226;256 GB,Blue,Wi-Fi;13499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_blue_1_1.jpg;19;16;;;1;19;;1;;;;
+227;256 GB,Purple,Wi-Fi;13499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_purple_1_1.jpg;19;17;;;1;19;;1;;;;
+228;256 GB,Starlight,Wi-Fi;13499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_starlight_1_1.jpg;19;18;;;1;19;;1;;;;
+229;256 GB,Space Gray,Wi-Fi + Cellular;16499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_space_gray_1_1.jpg;19;15;;;1;19;;2;;;;
+230;256 GB,Blue,Wi-Fi + Cellular;16499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_blue_1_1.jpg;19;16;;;1;19;;2;;;;
+231;256 GB,Purple,Wi-Fi + Cellular;16499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_purple_1_1.jpg;19;17;;;1;19;;2;;;;
+232;256 GB,Starlight,Wi-Fi + Cellular;16499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_starlight_1_1.jpg;19;18;;;1;19;;2;;;;
+233;512 GB,Space Gray,Wi-Fi;17499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_space_gray_1_1.jpg;19;15;;;2;19;;1;;;;
+234;512 GB,Blue,Wi-Fi;17499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_blue_1_1.jpg;19;16;;;2;19;;1;;;;
+235;512 GB,Purple,Wi-Fi;17499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_purple_1_1.jpg;19;17;;;2;19;;1;;;;
+236;512 GB,Starlight,Wi-Fi;17499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_starlight_1_1.jpg;19;18;;;2;19;;1;;;;
+237;512 GB,Space Gray,Wi-Fi + Cellular;20499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_space_gray_1_1.jpg;19;15;;;2;19;;2;;;;
+238;512 GB,Blue,Wi-Fi + Cellular;20499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_blue_1_1.jpg;19;16;;;2;19;;2;;;;
+239;512 GB,Purple,Wi-Fi + Cellular;20499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_purple_1_1.jpg;19;17;;;2;19;;2;;;;
+240;512 GB,Starlight,Wi-Fi + Cellular;20499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_starlight_1_1.jpg;19;18;;;2;19;;2;;;;
+241;1 TB,Space Gray,Wi-Fi;21999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_space_gray_1_1.jpg;19;15;;;3;19;;1;;;;
+242;1 TB,Blue,Wi-Fi;21999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_blue_1_1.jpg;19;16;;;3;19;;1;;;;
+243;1 TB,Purple,Wi-Fi;21999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_space_gray_1a_1.jpg;19;17;;;3;19;;1;;;;
+244;1 TB,Starlight,Wi-Fi;21999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_starlight_1_1.jpg;19;18;;;3;19;;1;;;;
+245;1 TB,Space Gray,Wi-Fi + Cellular;24999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_space_gray_1_1.jpg;19;15;;;3;19;;2;;;;
+246;1 TB,Blue,Wi-Fi + Cellular;24999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_blue_1_1.jpg;19;16;;;3;19;;2;;;;
+247;1 TB,Purple,Wi-Fi + Cellular;24999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_space_gray_1a_1.jpg;19;17;;;3;19;;2;;;;
+248;1 TB,Starlight,Wi-Fi + Cellular;24999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_11-inch_m2_wifi_starlight_1_1.jpg;19;18;;;3;19;;2;;;;
+249;64 GB,Starlight,Wi-Fi;9499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_gen_5_10_9_inci_wi-fi_starlight_1.jpg;20;19;;;6;20;;1;;;;
+250;64 GB,Purple,Wi-Fi;9499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_gen_5_10_9_inci_wi-fi_purple_1.jpg;20;20;;;6;20;;1;;;;
+251;64 GB,Pink,Wi-Fi;9499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_gen_5_10_9_inci_wi-fi_pink_1.jpg;20;21;;;6;20;;1;;;;
+252;64 GB,Blue,Wi-Fi;9499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_gen_5_10_9_inci_wi-fi_blue_1.jpg;20;22;;;6;20;;1;;;;
+253;64 GB,Space Gray,Wi-Fi;9499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_gen_5_10_9_inci_wi-fi_space_grey_1.jpg;20;23;;;6;20;;1;;;;
+254;64 GB,Starlight,Wi-Fi + Cellular;12499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_gen_5_10_9_inci_wi-fi_starlight_1.jpg;20;19;;;6;20;;2;;;;
+255;64 GB,Purple,Wi-Fi + Cellular;12499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_gen_5_10_9_inci_wi-fi_purple_1.jpg;20;20;;;6;20;;2;;;;
+256;64 GB,Pink,Wi-Fi + Cellular;12499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_gen_5_10_9_inci_wi-fi_pink_1.jpg;20;21;;;6;20;;2;;;;
+257;64 GB,Blue,Wi-Fi + Cellular;12499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_gen_5_10_9_inci_wi-fi_blue_1.jpg;20;22;;;6;20;;2;;;;
+258;64 GB,Space Gray,Wi-Fi + Cellular;12499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_gen_5_10_9_inci_wi-fi_space_grey_1.jpg;20;23;;;6;20;;2;;;;
+259;256 GB,Purple,Wi-Fi;9499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_gen_5_10_9_inci_wi-fi_purple_1.jpg;20;20;;;1;20;;1;;;;
+260;256 GB,Pink,Wi-Fi;9499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_gen_5_10_9_inci_wi-fi_pink_1.jpg;20;21;;;1;20;;1;;;;
+261;256 GB,Blue,Wi-Fi;9499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_gen_5_10_9_inci_wi-fi_blue_1.jpg;20;22;;;1;20;;1;;;;
+262;256 GB,Space Gray,Wi-Fi;9499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_gen_5_10_9_inci_wi-fi_space_grey_1.jpg;20;23;;;1;20;;1;;;;
+263;256 GB,Starlight,Wi-Fi + Cellular;15499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_gen_5_10_9_inci_wi-fi_starlight_1.jpg;20;19;;;1;20;;2;;;;
+264;256 GB,Purple,Wi-Fi + Cellular;15499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_gen_5_10_9_inci_wi-fi_purple_1.jpg;20;20;;;1;20;;2;;;;
+265;256 GB,Pink,Wi-Fi + Cellular;15499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_gen_5_10_9_inci_wi-fi_pink_1.jpg;20;21;;;1;20;;2;;;;
+266;256 GB,Blue,Wi-Fi + Cellular;15499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_gen_5_10_9_inci_wi-fi_blue_1.jpg;20;22;;;1;20;;2;;;;
+267;256 GB,Space Gray,Wi-Fi + Cellular;15499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_air_gen_5_10_9_inci_wi-fi_space_grey_1.jpg;20;23;;;1;20;;2;;;;
+268;64 GB,Wi-Fi,Blue;6499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_gen_10_10_9_inci_wi-fi_blue_1.jpg;21;24;;;6;21;;1;;;;
+269;64 GB,Wi-Fi,Pink;6499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_gen_10_10_9_inci_wi-fi_pink_1.jpg;21;25;;;6;21;;1;;;;
+270;64 GB,Wi-Fi,Silver;6499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_gen_10_10_9_inci_wi-fi_silver_1.jpg;21;26;;;6;21;;1;;;;
+271;64 GB,Wi-Fi,Yellow;6499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_gen_10_10_9_inci_wi-fi_yellow_1.jpg;21;27;;;6;21;;1;;;;
+272;64 GB,Wi-Fi + Cellular,Blue;9999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_gen_10_10_9_inci_wi-fi_blue_1.jpg;21;24;;;6;21;;2;;;;
+273;64 GB,Wi-Fi + Cellular,Pink;9999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_gen_10_10_9_inci_wi-fi_pink_1.jpg;21;25;;;6;21;;2;;;;
+274;64 GB,Wi-Fi + Cellular,Silver;9999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_gen_10_10_9_inci_wi-fi_silver_1.jpg;21;26;;;6;21;;2;;;;
+275;64 GB,Wi-Fi + Cellular,Yellow;9999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_gen_10_10_9_inci_wi-fi_yellow_1.jpg;21;27;;;6;21;;2;;;;
+276;256 GB,Wi-Fi,Blue;9999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_gen_10_10_9_inci_wi-fi_blue_1.jpg;21;24;;;1;21;;1;;;;
+277;256 GB,Wi-Fi,Pink;9999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_gen_10_10_9_inci_wi-fi_pink_1.jpg;21;25;;;1;21;;1;;;;
+278;256 GB,Wi-Fi,Silver;9999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_gen_10_10_9_inci_wi-fi_silver_1.jpg;21;26;;;1;21;;1;;;;
+279;256 GB,Wi-Fi,Yellow;9999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_gen_10_10_9_inci_wi-fi_yellow_1.jpg;21;27;;;1;21;;1;;;;
+280;256 GB,Wi-Fi + Cellular,Blue;12999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_gen_10_10_9_inci_wi-fi_blue_1.jpg;21;24;;;1;21;;2;;;;
+281;256 GB,Wi-Fi + Cellular,Pink;12999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_gen_10_10_9_inci_wi-fi_pink_1.jpg;21;25;;;1;21;;2;;;;
+282;256 GB,Wi-Fi + Cellular,Silver;12999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_gen_10_10_9_inci_wi-fi_silver_1.jpg;21;26;;;1;21;;2;;;;
+283;256 GB,Wi-Fi + Cellular,Yellow;12999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/ipad_gen_10_10_9_inci_wi-fi_yellow_1.jpg;21;27;;;1;21;;2;;;;
+284;64 GB,Space Grey,Wi-Fi;4999000;https://cdnpro.eraspace.com/media/catalog/product/m/k/mk2k3paa0_2.jpg;22;28;;;6;22;;1;;;;
+285;64 GB,Silver,Wi-Fi;4999000;https://cdnpro.eraspace.com/media/catalog/product/m/k/mk2l3paa0_1_2.jpg;22;29;;;6;22;;1;;;;
+286;64 GB,Space Grey,Wi-Fi + Cellular;7799000;https://cdnpro.eraspace.com/media/catalog/product/m/k/mk2k3paa0_2.jpg;22;28;;;6;22;;2;;;;
+287;64 GB,Silver,Wi-Fi + Cellular;7799000;https://cdnpro.eraspace.com/media/catalog/product/m/k/mk2l3paa0_1_2.jpg;22;29;;;6;22;;2;;;;
+288;256 GB,Space Grey,Wi-Fi;7799000;https://cdnpro.eraspace.com/media/catalog/product/m/k/mk2k3paa0_2.jpg;22;28;;;1;22;;1;;;;
+289;256 GB,Silver,Wi-Fi;7799000;https://cdnpro.eraspace.com/media/catalog/product/m/k/mk2l3paa0_1_2.jpg;22;29;;;1;22;;1;;;;
+290;256 GB,Space Grey,Wi-Fi + Cellular;10299000;https://cdnpro.eraspace.com/media/catalog/product/m/k/mk2k3paa0_2.jpg;22;28;;;1;22;;2;;;;
+291;256 GB,Silver,Wi-Fi + Cellular;10299000;https://cdnpro.eraspace.com/media/catalog/product/m/k/mk2l3paa0_1_2.jpg;22;29;;;1;22;;2;;;;
+292;64 GB,Space Gray,Wi-Fi;9099000;https://cdnpro.eraspace.com/media/catalog/product/m/k/mk7m3paa0_1_1.jpg;23;30;;;6;23;;1;;;;
+293;64 GB,Starlight,Wi-Fi;9099000;https://cdnpro.eraspace.com/media/catalog/product/m/k/mk7p3paa0_2.jpg;23;31;;;6;23;;1;;;;
+294;64 GB,Purple,Wi-Fi;9099000;https://cdnpro.eraspace.com/media/catalog/product/m/k/mk7r3paa0_2.jpg;23;32;;;6;23;;1;;;;
+295;64 GB,Pink,Wi-Fi;9099000;https://cdnpro.eraspace.com/media/catalog/product/m/l/mlwl3paa0_2.jpg;23;33;;;6;23;;1;;;;
+296;64 GB,Space Gray,Wi-Fi + Cellular;12099000;https://cdnpro.eraspace.com/media/catalog/product/m/k/mk7m3paa0_1_1.jpg;23;30;;;6;23;;2;;;;
+297;64 GB,Starlight,Wi-Fi + Cellular;12099000;https://cdnpro.eraspace.com/media/catalog/product/m/k/mk7p3paa0_2.jpg;23;31;;;6;23;;2;;;;
+298;64 GB,Pink,Wi-Fi + Cellular;12099000;https://cdnpro.eraspace.com/media/catalog/product/m/l/mlwl3paa0_2.jpg;23;33;;;6;23;;2;;;;
+299;256 GB,Space Gray,Wi-Fi;12099000;https://cdnpro.eraspace.com/media/catalog/product/m/k/mk7m3paa0_1_1.jpg;23;30;;;1;23;;1;;;;
+300;256 GB,Space Gray,Wi-Fi + Cellular;15199000;https://cdnpro.eraspace.com/media/catalog/product/m/k/mk7m3paa0_1_1.jpg;23;30;;;1;23;;2;;;;
+301;256 GB,Starlight,Wi-Fi + Cellular;15199000;https://cdnpro.eraspace.com/media/catalog/product/m/k/mk7p3paa0_2.jpg;23;31;;;1;23;;2;;;;
+302;256 GB,Purple,Wi-Fi + Cellular;15199000;https://cdnpro.eraspace.com/media/catalog/product/m/k/mk7r3paa0_2.jpg;23;32;;;1;23;;2;;;;
+303;256 GB,Pink,Wi-Fi + Cellular;15199000;https://cdnpro.eraspace.com/media/catalog/product/m/l/mlwl3paa0_2.jpg;23;33;;;1;23;;2;;;;
+304;128 GB,Blue Titanium,iPhone 15 Pro;18249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_blue_titanium_1_6.jpg;24;35;;;5;24;;;;;;
+305;128 GB,White Titanium,iPhone 15 Pro;18249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_white_titanium_1_4.jpg;24;36;;;5;24;;;;;;
+306;128 GB,Black Titanium,iPhone 15 Pro;18249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_black_titanium_1_4.jpg;24;37;;;5;24;;;;;;
+307;256 GB,Natural Titanium,iPhone 15 Pro;21249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_natural_titanium_1_4_1.jpg;24;34;;;1;24;;;;;;
+308;256 GB,Blue Titanium,iPhone 15 Pro;21249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_blue_titanium_1_6.jpg;24;35;;;1;24;;;;;;
+309;256 GB,White Titanium,iPhone 15 Pro;21249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_white_titanium_1_4.jpg;24;36;;;1;24;;;;;;
+310;256 GB,Black Titanium,iPhone 15 Pro;21249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_black_titanium_1_4.jpg;24;37;;;1;24;;;;;;
+311;512 GB,Natural Titanium,iPhone 15 Pro;25249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_natural_titanium_1_4_1.jpg;24;34;;;2;24;;;;;;
+312;512 GB,Blue Titanium,iPhone 15 Pro;25249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_blue_titanium_1_6.jpg;24;35;;;2;24;;;;;;
+313;512 GB,White Titanium,iPhone 15 Pro;25249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_white_titanium_1_4.jpg;24;36;;;2;24;;;;;;
+314;512 GB,Black Titanium,iPhone 15 Pro;25249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_black_titanium_1_4.jpg;24;37;;;2;24;;;;;;
+315;1 TB,Natural Titanium,iPhone 15 Pro;29249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_natural_titanium_1_4_1.jpg;24;34;;;3;24;;;;;;
+316;1 TB,Blue Titanium,iPhone 15 Pro;29249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_blue_titanium_1_6.jpg;24;35;;;3;24;;;;;;
+317;1 TB,White Titanium,iPhone 15 Pro;29249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_white_titanium_1_4.jpg;24;36;;;3;24;;;;;;
+318;1 TB,Black Titanium,iPhone 15 Pro;29249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_black_titanium_1_4.jpg;24;37;;;3;24;;;;;;
+319;256 GB,Natural Titanium,iPhone 15 Pro Max;22249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_max_natural_titanium_1_1_2.jpg;25;34;;;1;25;;;;;;
+320;256 GB,Blue Titanium,iPhone 15 Pro Max;22249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_max_blue_titanium_1.jpg;25;35;;;1;25;;;;;;
+321;256 GB,White Titanium,iPhone 15 Pro Max;22249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_max_white_titanium_1.jpg;25;36;;;1;25;;;;;;
+322;256 GB,Black Titanium,iPhone 15 Pro Max;22249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_max_black_titanium_1_1.jpg;25;37;;;1;25;;;;;;
+323;512 GB,Natural Titanium,iPhone 15 Pro Max;27249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_max_natural_titanium_1_1_2.jpg;25;34;;;2;25;;;;;;
+324;512 GB,White Titanium,iPhone 15 Pro Max;27249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_max_white_titanium_1.jpg;25;36;;;2;25;;;;;;
+325;512 GB,Black Titanium,iPhone 15 Pro Max;27249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_max_black_titanium_1_1.jpg;25;37;;;2;25;;;;;;
+326;1 TB,Blue Titanium,iPhone 15 Pro Max;31249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_max_blue_titanium_1.jpg;25;35;;;3;25;;;;;;
+327;1 TB,White Titanium,iPhone 15 Pro Max;31249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pro_max_white_titanium_1.jpg;25;36;;;3;25;;;;;;
+328;128 GB,Blue,iPhone 15;12999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_blue_1.jpg;26;38;;;5;26;;;;;;
+329;128 GB,Pink,iPhone 15;12999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pink_1_3.jpg;26;39;;;5;26;;;;;;
+330;128 GB,Yellow,iPhone 15;12999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_yellow_1_3.jpg;26;40;;;5;26;;;;;;
+331;128 GB,Green,iPhone 15;12999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_green_1.jpg;26;41;;;5;26;;;;;;
+332;128 GB,Black,iPhone 15;12999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_black_1_1.jpg;26;42;;;5;26;;;;;;
+333;256 GB,Blue,iPhone 15;15999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_blue_1.jpg;26;38;;;1;26;;;;;;
+334;256 GB,Pink,iPhone 15;15999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pink_1_3.jpg;26;39;;;1;26;;;;;;
+335;256 GB,Yellow,iPhone 15;15999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_yellow_1_3.jpg;26;40;;;1;26;;;;;;
+336;256 GB,Green,iPhone 15;15999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_green_1.jpg;26;41;;;1;26;;;;;;
+337;256 GB,Black,iPhone 15;15999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_black_1_1.jpg;26;42;;;1;26;;;;;;
+338;512 GB,Blue,iPhone 15;19999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_blue_1.jpg;26;38;;;2;26;;;;;;
+339;512 GB,Pink,iPhone 15;19999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_pink_1_3.jpg;26;39;;;2;26;;;;;;
+340;512 GB,Yellow,iPhone 15;19999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_yellow_1_3.jpg;26;40;;;2;26;;;;;;
+341;512 GB,Green,iPhone 15;19999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_green_1.jpg;26;41;;;2;26;;;;;;
+342;512 GB,Black,iPhone 15;19999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_black_1_1.jpg;26;42;;;2;26;;;;;;
+343;128 GB,Blue,iPhone 15 Plus;15999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_plus_blue_1.jpg;27;38;;;5;27;;;;;;
+344;128 GB,Pink,iPhone 15 Plus;15999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_plus_pink_1.jpg;27;39;;;5;27;;;;;;
+345;128 GB,Yellow,iPhone 15 Plus;15999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_plus_yellow_1_1.jpg;27;40;;;5;27;;;;;;
+346;128 GB,Green,iPhone 15 Plus;15999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_plus_green_1_1.jpg;27;41;;;5;27;;;;;;
+347;128 GB,Black,iPhone 15 Plus;15999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_plus_black_1.jpg;27;42;;;5;27;;;;;;
+348;256 GB,Blue,iPhone 15 Plus;18999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_plus_blue_1.jpg;27;38;;;1;27;;;;;;
+349;256 GB,Pink,iPhone 15 Plus;18999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_plus_pink_1.jpg;27;39;;;1;27;;;;;;
+350;256 GB,Yellow,iPhone 15 Plus;18999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_plus_yellow_1_1.jpg;27;40;;;1;27;;;;;;
+351;256 GB,Green,iPhone 15 Plus;18999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_plus_green_1_1.jpg;27;41;;;1;27;;;;;;
+352;256 GB,Black,iPhone 15 Plus;18999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_plus_black_1.jpg;27;42;;;1;27;;;;;;
+353;512 GB,Blue,iPhone 15 Plus;23249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_plus_blue_1.jpg;27;38;;;2;27;;;;;;
+354;512 GB,Pink,iPhone 15 Plus;23249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_plus_pink_1.jpg;27;39;;;2;27;;;;;;
+355;512 GB,Yellow,iPhone 15 Plus;23249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_plus_yellow_1_1.jpg;27;40;;;2;27;;;;;;
+356;512 GB,Green,iPhone 15 Plus;23249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_plus_green_1_1.jpg;27;41;;;2;27;;;;;;
+357;512 GB,Black,iPhone 15 Plus;23249000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_iphone_15_plus_black_1.jpg;27;42;;;2;27;;;;;;
+358;128 GB,Yellow,iPhone 14;12249000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_yellow_1_3.jpg;28;43;;;5;28;;;;;;
+359;128 GB,Red,iPhone 14;12249000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_product_red_1.jpg;28;44;;;5;28;;;;;;
+360;128 GB,Purple,iPhone 14;12249000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_purple_1.jpg;28;45;;;5;28;;;;;;
+361;128 GB,Starlight,iPhone 14;12249000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_starlight_1.jpg;28;46;;;5;28;;;;;;
+362;128 GB,Midnight,iPhone 14;12249000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_midnight_1.jpg;28;47;;;5;28;;;;;;
+363;128 GB,Blue,iPhone 14;12249000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_blue_1.jpg;28;48;;;5;28;;;;;;
+364;256 GB,Yellow,iPhone 14;15049000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_yellow_1_3.jpg;28;43;;;1;28;;;;;;
+365;256 GB,Red,iPhone 14;15049000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_product_red_1.jpg;28;44;;;1;28;;;;;;
+366;256 GB,Purple,iPhone 14;15049000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_purple_1.jpg;28;45;;;1;28;;;;;;
+367;256 GB,Starlight,iPhone 14;15049000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_starlight_1.jpg;28;46;;;1;28;;;;;;
+368;256 GB,Midnight,iPhone 14;15049000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_midnight_1.jpg;28;47;;;1;28;;;;;;
+369;256 GB,Blue,iPhone 14;15049000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_blue_1.jpg;28;48;;;1;28;;;;;;
+370;512 GB,Yellow,iPhone 14;23249000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_yellow_1_3.jpg;28;43;;;2;28;;;;;;
+371;512 GB,Red,iPhone 14;23249000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_product_red_1.jpg;28;44;;;2;28;;;;;;
+372;512 GB,Purple,iPhone 14;23249000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_purple_1.jpg;28;45;;;2;28;;;;;;
+373;512 GB,Starlight,iPhone 14;23249000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_starlight_1.jpg;28;46;;;2;28;;;;;;
+374;512 GB,Midnight,iPhone 14;23249000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_midnight_1.jpg;28;47;;;2;28;;;;;;
+375;128 GB,Yellow,iPhone 14 Plus;17999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_plus_yellow_1_3.jpg;29;43;;;5;29;;;;;;
+376;128 GB,Red,iPhone 14 Plus;17999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_plus_product_red_1.jpg;29;44;;;5;29;;;;;;
+377;128 GB,Purple,iPhone 14 Plus;17999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_plus_purple_1.jpg;29;45;;;5;29;;;;;;
+378;128 GB,Starlight,iPhone 14 Plus;17999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_plus_starlight_1.jpg;29;46;;;5;29;;;;;;
+379;128 GB,Midnight,iPhone 14 Plus;17999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_plus_midnight_1.jpg;29;47;;;5;29;;;;;;
+380;128 GB,Blue,iPhone 14 Plus;17999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_plus_blue_1.jpg;29;48;;;5;29;;;;;;
+381;256 GB,Yellow,iPhone 14 Plus;20999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_plus_yellow_1_3.jpg;29;43;;;1;29;;;;;;
+382;256 GB,Red,iPhone 14 Plus;20999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_plus_product_red_1.jpg;29;44;;;1;29;;;;;;
+383;256 GB,Purple,iPhone 14 Plus;20999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_plus_purple_1.jpg;29;45;;;1;29;;;;;;
+384;256 GB,Starlight,iPhone 14 Plus;20999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_plus_starlight_1.jpg;29;46;;;1;29;;;;;;
+385;256 GB,Midnight,iPhone 14 Plus;20999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_plus_midnight_1.jpg;29;47;;;1;29;;;;;;
+386;256 GB,Blue,iPhone 14 Plus;20999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_plus_blue_1.jpg;29;48;;;1;29;;;;;;
+387;512 GB,Yellow,iPhone 14 Plus;24999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_plus_yellow_1_3.jpg;29;43;;;2;29;;;;;;
+388;512 GB,Red,iPhone 14 Plus;24999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_plus_product_red_1.jpg;29;44;;;2;29;;;;;;
+389;512 GB,Purple,iPhone 14 Plus;24999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_plus_purple_1.jpg;29;45;;;2;29;;;;;;
+390;512 GB,Midnight,iPhone 14 Plus;24999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_plus_midnight_1.jpg;29;47;;;2;29;;;;;;
+391;512 GB,Blue,iPhone 14 Plus;24999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_14_plus_blue_1.jpg;29;48;;;2;29;;;;;;
+392;128 GB,Green;8999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_13_green_1_1_1.jpg;30;49;;;5;30;;;;;;
+393;128 GB,Pink;8999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_13_pink_1_1.jpg;30;50;;;5;30;;;;;;
+394;128 GB,Blue;8999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_13_blue_1_1.jpg;30;51;;;5;30;;;;;;
+395;128 GB,Midnight;8999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_13_midnight_1_1.jpg;30;52;;;5;30;;;;;;
+396;128 GB,Starlight;8999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_13_starlight_1_1.jpg;30;53;;;5;30;;;;;;
+397;128 GB, Red;8999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_13_product_red_1_1.jpg;30;54;;;5;30;;;;;;
+398;256 GB,Green;11499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_13_green_1_1_1.jpg;30;49;;;1;30;;;;;;
+399;256 GB,Pink;11499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_13_pink_1_1.jpg;30;50;;;1;30;;;;;;
+400;256 GB,Blue;11499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_13_blue_1_1.jpg;30;51;;;1;30;;;;;;
+401;256 GB,Midnight;11499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_13_midnight_1_1.jpg;30;52;;;1;30;;;;;;
+402;256 GB,Starlight;11499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_13_starlight_1_1.jpg;30;53;;;1;30;;;;;;
+403;256 GB, Red;11499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_13_product_red_1_1.jpg;30;54;;;1;30;;;;;;
+404;64 GB,Black;7499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_12_black_1.jpg;31;55;;;6;31;;;;;;
+405;64 GB,White;7499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_12_white_1.jpg;31;56;;;6;31;;;;;;
+406;64 GB,Red;7499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_12_product_red_1.jpg;31;57;;;6;31;;;;;;
+407;64 GB,Green;7499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_12_green_2.jpg;31;58;;;6;31;;;;;;
+408;64 GB,Blue;7499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_12_blue_1.jpg;31;59;;;6;31;;;;;;
+409;64 GB,Purple;7499000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_12_purple_1_3.jpg;31;60;;;6;31;;;;;;
+410;128 GB,Black;7999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_12_black_1.jpg;31;55;;;5;31;;;;;;
+411;128 GB,White;7999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_12_white_1.jpg;31;56;;;5;31;;;;;;
+412;128 GB,Red;7999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_12_product_red_1.jpg;31;57;;;5;31;;;;;;
+413;128 GB,Green;7999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_12_green_2.jpg;31;58;;;5;31;;;;;;
+414;128 GB,Blue;7999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_12_blue_1.jpg;31;59;;;5;31;;;;;;
+415;128 GB,Purple;7999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_12_purple_1_3.jpg;31;60;;;5;31;;;;;;
+416;256 GB,Red;14999000;https://cdnpro.eraspace.com/media/catalog/product/i/p/iphone_12_product_red_1.jpg;31;57;;;1;31;;;;;;
+417;Midnight,Alumunium,40 mm,GPS,S/M,Midnight;4499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_se_gps_40mm_midnight_aluminium_case_with_midnight_sport_band_gen_2__01_1.jpg;32;61;;;;32;;3;1;1;1;1
+419;Starlight,Alumunium,40 mm,GPS,S/M,Starlight;4499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_se_gps_40mm_starlight_aluminium_case_with_starlight_sport_band_gen_2__01_1.jpg;32;62;;;;32;;3;1;1;1;2
+418;Midnight,Alumunium,40 mm,GPS,M/L,Midnight;4499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_se_gps_40mm_midnight_aluminium_case_with_midnight_sport_band_gen_2__01_1.jpg;32;61;;;;32;;3;1;1;2;1
+420;Starlight,Alumunium,40 mm,GPS,M/L,Starlight;4499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_se_gps_44mm_starlight_aluminium_case_with_starlight_sport_band_gen_2__01_1.jpg;32;62;;;;32;;3;1;1;2;2
+421;Silver,Alumunium,40 mm,GPS,M/L,Denim;4499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_se_gps_44mm_silver_aluminium_case_with_denim_sport_band_gen_2__01_1.jpg;32;63;;;;32;;3;1;1;2;3
+422;Midnight,Alumunium,44 mm,GPS,S/M,Midnight;4999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_se_gps_44mm_midnight_aluminium_case_with_midnight_sport_band_gen_2__01_2_1.jpg;32;61;;;;32;;3;1;2;1;1
+424;Starlight,Alumunium,44 mm,GPS,S/M,Starlight;4999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_se_gps_44mm_starlight_aluminium_case_with_starlight_sport_band_gen_2__01_1.jpg;32;62;;;;32;;3;1;2;1;2
+426;Silver,Alumunium,44 mm,GPS,S/M,Denim;4999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_se_gps_44mm_silver_aluminium_case_with_denim_sport_band_gen_2__01_1.jpg;32;63;;;;32;;3;1;2;1;3
+423;Midnight,Alumunium,44 mm,GPS,M/L,Midnight;4999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_se_gps_44mm_midnight_aluminium_case_with_midnight_sport_band_gen_2__01_2.jpg;32;61;;;;32;;3;1;2;2;1
+425;Starlight,Alumunium,44 mm,GPS,M/L,Starlight;4999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_se_gps_44mm_starlight_aluminium_case_with_starlight_sport_band_gen_2__01.jpg;32;62;;;;32;;3;1;2;2;2
+427;Silver,Alumunium,44 mm,GPS,M/L,Denim;4999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_se_gps_44mm_silver_aluminium_case_with_denim_sport_band_gen_2__01.jpg;32;63;;;;32;;3;1;2;2;3
+428;Midnight,Alumunium,40 mm,GPS,One Size,Ink;4499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_se_gps_40mm_midnight_aluminium_case_with_ink_sport_loop_gen_2__01.jpg;33;61;;;;33;;3;1;1;3;4
+429;Starlight,Alumunium,40 mm,GPS,One Size,Lake Green;4499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_se_gps_40mm_starlight_aluminium_case_with_lake_green_sport_loop_gen_2__01.jpg;33;62;;;;33;;3;1;1;3;5
+430;Silver,Alumunium,40 mm,GPS,One Size,Blue Cloud;4499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_se_gps_40mm_silver_aluminium_case_with_blue_cloud_sport_loop_gen_2__01.jpg;33;63;;;;33;;3;1;1;3;6
+431;Midnight,Alumunium,44 mm,GPS,One Size,Ink;4999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_se_gps_44mm_midnight_aluminium_case_with_ink_sport_loop_gen_2__01.jpg;33;61;;;;33;;3;1;2;3;4
+432;Starlight,Alumunium,44 mm,GPS,One Size,Lake Green;4999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_se_gps_44mm_starlight_aluminium_case_with_lake_green_sport_loop_gen_2__01.jpg;33;62;;;;33;;3;1;2;3;5
+433;Silver,Alumunium,44 mm,GPS,One Size,Blue Cloud;4999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_se_gps_44mm_silver_aluminium_case_with_blue_cloud_sport_loop_gen_2__01_1.jpg;33;63;;;;33;;3;1;2;3;6
+434;Titanium,49 mm,GPS,One Size,Natural,Navy;14999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_ultra_2_gps_49mm_cellular_natural_titanium_case_with_navy_ocean_band_01.jpg;34;64;;;;34;;3;2;3;3;7
+435;Titanium,49 mm,GPS,One Size,Black,Black;14999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_ultra_2_gps_49mm_cellular_black_titanium_case_with_black_ocean_band_01.jpg;34;65;;;;34;;3;2;3;3;8
+436;Titanium,49 mm,GPS,Small,Natural,Tan;14999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_ultra_2_gps_49mm_cellular_natural_titanium_case_with_tan_alpine_loop_01_2.jpg;35;64;;;;35;;3;2;3;4;9
+437;Titanium,49 mm,GPS,Small,Black,Dark Green;14999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_ultra_2_gps_49mm_cellular_black_titanium_case_with_dark_green_alpine_loop_01_2.jpg;35;65;;;;35;;3;2;3;4;10
+438;Titanium,49 mm,GPS,Medium,Natural,Tan;14999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_ultra_2_gps_49mm_cellular_natural_titanium_case_with_tan_alpine_loop_01_1.jpg;35;64;;;;35;;3;2;3;5;9
+439;Titanium,49 mm,GPS,Medium,Black,Dark Green;14999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_ultra_2_gps_49mm_cellular_black_titanium_case_with_dark_green_alpine_loop_01_1.jpg;35;65;;;;35;;3;2;3;5;10
+440;Titanium,49 mm,GPS,Large,Natural,Tan;14999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_ultra_2_gps_49mm_cellular_natural_titanium_case_with_tan_alpine_loop_01.jpg;35;64;;;;35;;3;2;3;6;9
+441;Titanium,49 mm,GPS,Large,Black,Dark Green;14999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_ultra_2_gps_49mm_cellular_black_titanium_case_with_dark_green_alpine_loop_01.jpg;35;65;;;;35;;3;2;3;6;10
+442;Titanium,49 mm,GPS,S/M,Natural,Blue;14999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_ultra_2_gps_49mm_cellular_natural_titanium_case_with_blue_trail_loop_01_1.jpg;36;64;;;;36;;3;2;3;1;11
+443;Titanium,49 mm,GPS,S/M,Black,Black;14999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_ultra_2_gps_49mm_cellular_black_titanium_case_with_black_trail_loop_01_1.jpg;36;65;;;;36;;3;2;3;1;8
+444;Titanium,49 mm,GPS,M/L,Natural,Blue;14999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_ultra_2_gps_49mm_cellular_natural_titanium_case_with_blue_trail_loop_01.jpg;36;64;;;;36;;3;2;3;2;11
+445;Titanium,49 mm,GPS,M/L,Black,Black;14999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_ultra_2_gps_49mm_cellular_black_titanium_case_with_black_trail_loop_01.jpg;36;65;;;;36;;3;2;3;2;8
+446;Titanium,49 mm,GPS,Small,Natural,Natural;16999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_ultra_2_gps_49_cellular_natural_titanium_case_with_natural_titanium_milanese_loop_01_2.jpg;37;64;;;;37;;3;2;3;4;12
+447;Titanium,49 mm,GPS,Small,Black,Black;16999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_ultra_2_gps_49_cellular_black_titanium_case_with_black_titanium_milanese_loop_01_2.jpg;37;65;;;;37;;3;2;3;4;8
+448;Titanium,49 mm,GPS,Medium,Natural,Natural;16999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_ultra_2_gps_49_cellular_natural_titanium_case_with_natural_titanium_milanese_loop_01_1.jpg;37;64;;;;37;;3;2;3;5;12
+449;Titanium,49 mm,GPS,Medium,Black,Black;16999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_ultra_2_gps_49_cellular_black_titanium_case_with_black_titanium_milanese_loop_01_1.jpg;37;65;;;;37;;3;2;3;5;8
+450;Titanium,49 mm,GPS,Large,Natural,Natural;16999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_ultra_2_gps_49_cellular_natural_titanium_case_with_natural_titanium_milanese_loop_01.jpg;37;64;;;;37;;3;2;3;6;12
+451;Titanium,49 mm,GPS,Large,Black,Black;16999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_ultra_2_gps_49_cellular_black_titanium_case_with_black_titanium_milanese_loop_01.jpg;37;65;;;;37;;3;2;3;6;8
+452;Midnight,Alumunium,41 mm,GPS,One Size,Midnight;7499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_41mm_gps_midnight_aluminium_case_with_midnight_sport_loop_1.jpg;38;61;;;;38;;3;1;4;3;1
+453;Silver,Alumunium,41 mm,GPS,One Size,Winter Blue;7499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_41mm_gps_silver_aluminium_case_with_winter_blue_sport_loop_1.jpg;38;63;;;;38;;3;1;4;3;13
+454;Starlight,Alumunium,41 mm,GPS,One Size,Starlight;7499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_41mm_gps_starlight_aluminium_case_with_starlight_sport_loop_1.jpg;38;62;;;;38;;3;1;4;3;2
+455;Pink,Alumunium,41 mm,GPS,One Size,Light Pink;7499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_41mm_gps_pink_aluminium_case_with_light_pink_sport_loop_1.jpg;38;66;;;;38;;3;1;4;3;14
+456;Midnight,Alumunium,45 mm,GPS,One Size,Midnight;7999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_45mm_gps_midnight_aluminium_case_with_midnight_sport_loop_1.jpg;38;61;;;;38;;3;1;5;3;1
+457;Silver,Alumunium,45 mm,GPS,One Size,Winter Blue;7999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_45mm_gps_silver_aluminium_case_with_winter_blue_sport_loop_1.jpg;38;63;;;;38;;3;1;5;3;13
+458;Starlight,Alumunium,45 mm,GPS,One Size,Starlight;7999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_45mm_gps_starlight_aluminium_case_with_starlight_sport_loop_1.jpg;38;62;;;;38;;3;1;5;3;2
+459;Pink,Alumunium,45 mm,GPS,One Size,Light Pink;7999000;ttps://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_45mm_gps_pink_aluminium_case_with_light_pink_sport_loop_1.jpg;38;66;;;;38;;3;1;5;3;14
+460;Midnight,Alumunium,41 mm,GPS,S/M,Midnight;7499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_41mm_gps_midnight_aluminium_case_with_midnight_sport_band_1.jpg;39;61;;;;39;;3;1;4;1;1
+461;Red,Alumunium,41 mm,GPS,S/M,Red;7499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_41mm_gps_product_red_aluminium_case_with_product_red_sport_band_1.jpg;39;67;;;;39;;3;1;4;1;15
+462;Starlight,Alumunium,41 mm,GPS,S/M,Starlight;7499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_41mm_gps_starlight_aluminium_case_with_starlight_sport_band_1.jpg;39;62;;;;39;;3;1;4;1;2
+463;Silver,Alumunium,41 mm,GPS,S/M,Storm Blue;7499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_41mm_gps_silver_aluminium_case_with_storm_blue_sport_band_1.jpg;39;63;;;;39;;3;1;4;1;16
+464;Pink,Alumunium,41 mm,GPS,S/M,Light Pink;7499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_41mm_gps_pink_aluminium_case_with_light_pink_sport_band_1.jpg;39;66;;;;39;;3;1;4;1;14
+465;Midnight,Alumunium,41 mm,GPS,M/L,Midnight;7499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_41mm_gps_midnight_aluminium_case_with_midnight_sport_band_1.jpg;39;61;;;;39;;3;1;4;2;1
+466;Red,Alumunium,41 mm,GPS,M/L,Red;7499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_41mm_gps_product_red_aluminium_case_with_product_red_sport_band_1.jpg;39;67;;;;39;;3;1;4;2;15
+467;Starlight,Alumunium,41 mm,GPS,M/L,Starlight;7499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_41mm_gps_starlight_aluminium_case_with_starlight_sport_band_1.jpg;39;62;;;;39;;3;1;4;2;2
+468;Silver,Alumunium,41 mm,GPS,M/L,Storm Blue;7499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_41mm_gps_silver_aluminium_case_with_storm_blue_sport_band_1.jpg;39;63;;;;39;;3;1;4;2;16
+469;Pink,Alumunium,41 mm,GPS,M/L,Light Pink;7499000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_41mm_gps_pink_aluminium_case_with_light_pink_sport_band_1.jpg;39;66;;;;39;;3;1;4;2;14
+470;Midnight,Alumunium,45 mm,GPS,S/M,Midnight;7999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_45mm_gps_midnight_aluminium_case_with_midnight_sport_band_1.jpg;39;61;;;;39;;3;1;5;1;1
+471;Red,Alumunium,45 mm,GPS,S/M,Red;7999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_45mm_gps_product_red_aluminium_case_with_product_red_sport_band_1.jpg;39;67;;;;39;;3;1;5;1;15
+472;Starlight,Alumunium,45 mm,GPS,S/M,Starlight;7999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_45mm_gps_starlight_aluminium_case_with_starlight_sport_band_1.jpg;39;62;;;;39;;3;1;5;1;2
+473;Silver,Alumunium,45 mm,GPS,S/M,Storm Blue;7999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_45mm_gps_silver_aluminium_case_with_storm_blue_sport_band_1.jpg;39;63;;;;39;;3;1;5;1;16
+474;Pink,Alumunium,45 mm,GPS,S/M,Light Pink;7999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_45mm_gps_pink_aluminium_case_with_light_pink_sport_band_1.jpg;39;66;;;;39;;3;1;5;1;14
+475;Midnight,Alumunium,45 mm,GPS,M/L,Midnight;7999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_45mm_gps_midnight_aluminium_case_with_midnight_sport_band_1.jpg;39;61;;;;39;;3;1;5;2;1
+476;Red,Alumunium,45 mm,GPS,M/L,Red;7999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_45mm_gps_product_red_aluminium_case_with_product_red_sport_band_1.jpg;39;67;;;;39;;3;1;5;2;15
+477;Starlight,Alumunium,45 mm,GPS,M/L,Starlight;7999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_45mm_gps_starlight_aluminium_case_with_starlight_sport_band_1.jpg;39;62;;;;39;;3;1;5;2;2
+478;Silver,Alumunium,45 mm,GPS,M/L,Storm Blue;7999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_45mm_gps_silver_aluminium_case_with_storm_blue_sport_band_1.jpg;39;63;;;;39;;3;1;5;2;16
+479;Pink,Alumunium,45 mm,GPS,M/L,Light Pink;7999000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_watch_series_9_45mm_gps_pink_aluminium_case_with_light_pink_sport_band_1.jpg;39;66;;;;39;;3;1;5;2;14
+480;AirPods Pro (2nd generation) with USB-C;4299000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_airpods_pro_generasi_ke-2_usb-c_1_1.jpg;40;;;;;40;;;;;;
+481;AirPods (3rd generation) with Lightning Charging Case;2799000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_airpods_3rd_generation_with_lightning_charging_case1_1_1.jpg;41;;;;;41;;;;;;
+482;AirPods (3rd generation) with MagSafe Charging Case;2999000;https://cdnpro.eraspace.com/media/catalog/product/a/i/airpods_3rd_generation__1_1.jpg;42;;;;;42;;;;;;
+483;AirPods (2nd generation) with Charging Case;1899000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple-airpods-with-charging-case-1_1.jpg;43;;;;;43;;;;;;
+484;AirPods Max;8749000;https://cdnpro.eraspace.com/media/catalog/product/a/p/apple_airpods_max_silver_1_1.jpg;44;;;;;44;;;;;;

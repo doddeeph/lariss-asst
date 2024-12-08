@@ -1,0 +1,25 @@
+{
+  "larissAsstApp": {
+    "material": {
+      "home": {
+        "title": "Materials",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Material baru",
+        "createOrEditLabel": "Buat atau edit Material",
+        "notFound": "No Materials found"
+      },
+      "created": "Material dengan id {{ param }} telah dibuat",
+      "updated": "Material dengan id {{ param }} telah diperbaharui",
+      "deleted": "Material dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Material {{ id }}?"
+      },
+      "detail": {
+        "title": "Material"
+      },
+      "id": "ID",
+      "name": "Name",
+      "value": "Value"
+    }
+  }
+}

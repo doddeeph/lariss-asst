@@ -12,6 +12,12 @@ import { getEntities as getColors } from 'app/entities/color/color.reducer';
 import { getEntities as getProcessors } from 'app/entities/processor/processor.reducer';
 import { getEntities as getMemories } from 'app/entities/memory/memory.reducer';
 import { getEntities as getStorages } from 'app/entities/storage/storage.reducer';
+import { getEntities as getScreens } from 'app/entities/screen/screen.reducer';
+import { getEntities as getConnectivities } from 'app/entities/connectivity/connectivity.reducer';
+import { getEntities as getMaterials } from 'app/entities/material/material.reducer';
+import { getEntities as getCaseSizes } from 'app/entities/case-size/case-size.reducer';
+import { getEntities as getStrapColors } from 'app/entities/strap-color/strap-color.reducer';
+import { getEntities as getStrapSizes } from 'app/entities/strap-size/strap-size.reducer';
 import { createEntity, getEntity, reset, updateEntity } from './product-details.reducer';
 
 export const ProductDetailsUpdate = () => {
@@ -28,6 +34,12 @@ export const ProductDetailsUpdate = () => {
   const processors = useAppSelector(state => state.processor.entities);
   const memories = useAppSelector(state => state.memory.entities);
   const storages = useAppSelector(state => state.storage.entities);
+  const screens = useAppSelector(state => state.screen.entities);
+  const connectivities = useAppSelector(state => state.connectivity.entities);
+  const materials = useAppSelector(state => state.material.entities);
+  const caseSizes = useAppSelector(state => state.caseSize.entities);
+  const strapColors = useAppSelector(state => state.strapColor.entities);
+  const strapSizes = useAppSelector(state => state.strapSize.entities);
   const productDetailsEntity = useAppSelector(state => state.productDetails.entity);
   const loading = useAppSelector(state => state.productDetails.loading);
   const updating = useAppSelector(state => state.productDetails.updating);
@@ -50,6 +62,12 @@ export const ProductDetailsUpdate = () => {
     dispatch(getProcessors({}));
     dispatch(getMemories({}));
     dispatch(getStorages({}));
+    dispatch(getScreens({}));
+    dispatch(getConnectivities({}));
+    dispatch(getMaterials({}));
+    dispatch(getCaseSizes({}));
+    dispatch(getStrapColors({}));
+    dispatch(getStrapSizes({}));
   }, []);
 
   useEffect(() => {
@@ -75,6 +93,12 @@ export const ProductDetailsUpdate = () => {
       processor: processors.find(it => it.id.toString() === values.processor?.toString()),
       memory: memories.find(it => it.id.toString() === values.memory?.toString()),
       storage: storages.find(it => it.id.toString() === values.storage?.toString()),
+      screen: screens.find(it => it.id.toString() === values.screen?.toString()),
+      connectivity: connectivities.find(it => it.id.toString() === values.connectivity?.toString()),
+      material: materials.find(it => it.id.toString() === values.material?.toString()),
+      caseSize: caseSizes.find(it => it.id.toString() === values.caseSize?.toString()),
+      strapColor: strapColors.find(it => it.id.toString() === values.strapColor?.toString()),
+      strapSize: strapSizes.find(it => it.id.toString() === values.strapSize?.toString()),
     };
 
     if (isNew) {
@@ -95,6 +119,12 @@ export const ProductDetailsUpdate = () => {
           processor: productDetailsEntity?.processor?.id,
           memory: productDetailsEntity?.memory?.id,
           storage: productDetailsEntity?.storage?.id,
+          screen: productDetailsEntity?.screen?.id,
+          connectivity: productDetailsEntity?.connectivity?.id,
+          material: productDetailsEntity?.material?.id,
+          caseSize: productDetailsEntity?.caseSize?.id,
+          strapColor: productDetailsEntity?.strapColor?.id,
+          strapSize: productDetailsEntity?.strapSize?.id,
         };
 
   return (
@@ -243,6 +273,102 @@ export const ProductDetailsUpdate = () => {
                 <option value="" key="0" />
                 {storages
                   ? storages.map(otherEntity => (
+                      <option value={otherEntity.id} key={otherEntity.id}>
+                        {otherEntity.name}
+                      </option>
+                    ))
+                  : null}
+              </ValidatedField>
+              <ValidatedField
+                id="product-details-screen"
+                name="screen"
+                data-cy="screen"
+                label={translate('larissAsstApp.productDetails.screen')}
+                type="select"
+              >
+                <option value="" key="0" />
+                {screens
+                  ? screens.map(otherEntity => (
+                      <option value={otherEntity.id} key={otherEntity.id}>
+                        {otherEntity.name}
+                      </option>
+                    ))
+                  : null}
+              </ValidatedField>
+              <ValidatedField
+                id="product-details-connectivity"
+                name="connectivity"
+                data-cy="connectivity"
+                label={translate('larissAsstApp.productDetails.connectivity')}
+                type="select"
+              >
+                <option value="" key="0" />
+                {connectivities
+                  ? connectivities.map(otherEntity => (
+                      <option value={otherEntity.id} key={otherEntity.id}>
+                        {otherEntity.name}
+                      </option>
+                    ))
+                  : null}
+              </ValidatedField>
+              <ValidatedField
+                id="product-details-material"
+                name="material"
+                data-cy="material"
+                label={translate('larissAsstApp.productDetails.material')}
+                type="select"
+              >
+                <option value="" key="0" />
+                {materials
+                  ? materials.map(otherEntity => (
+                      <option value={otherEntity.id} key={otherEntity.id}>
+                        {otherEntity.name}
+                      </option>
+                    ))
+                  : null}
+              </ValidatedField>
+              <ValidatedField
+                id="product-details-caseSize"
+                name="caseSize"
+                data-cy="caseSize"
+                label={translate('larissAsstApp.productDetails.caseSize')}
+                type="select"
+              >
+                <option value="" key="0" />
+                {caseSizes
+                  ? caseSizes.map(otherEntity => (
+                      <option value={otherEntity.id} key={otherEntity.id}>
+                        {otherEntity.name}
+                      </option>
+                    ))
+                  : null}
+              </ValidatedField>
+              <ValidatedField
+                id="product-details-strapColor"
+                name="strapColor"
+                data-cy="strapColor"
+                label={translate('larissAsstApp.productDetails.strapColor')}
+                type="select"
+              >
+                <option value="" key="0" />
+                {strapColors
+                  ? strapColors.map(otherEntity => (
+                      <option value={otherEntity.id} key={otherEntity.id}>
+                        {otherEntity.name}
+                      </option>
+                    ))
+                  : null}
+              </ValidatedField>
+              <ValidatedField
+                id="product-details-strapSize"
+                name="strapSize"
+                data-cy="strapSize"
+                label={translate('larissAsstApp.productDetails.strapSize')}
+                type="select"
+              >
+                <option value="" key="0" />
+                {strapSizes
+                  ? strapSizes.map(otherEntity => (
                       <option value={otherEntity.id} key={otherEntity.id}>
                         {otherEntity.name}
                       </option>

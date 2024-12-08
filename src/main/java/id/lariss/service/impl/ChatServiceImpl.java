@@ -29,6 +29,7 @@ public class ChatServiceImpl implements ChatService {
                     - Get all products,
                     - Get all products by category name
                     - Get product details by product name
+                    - Get lowest price product details by product names
                 Use parallel function calling if required.
                 Today is {current_date}.
                 """
@@ -37,7 +38,7 @@ public class ChatServiceImpl implements ChatService {
                 new PromptChatMemoryAdvisor(chatMemory), // Chat Memory
                 new LoggingAdvisor()
             )
-            .defaultFunctions("getProducts", "getProductDetails")
+            .defaultFunctions("getProducts", "getProductDetails", "getLowestPriceProductDetails")
             .build();
     }
 

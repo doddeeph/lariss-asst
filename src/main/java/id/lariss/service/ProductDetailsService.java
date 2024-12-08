@@ -65,5 +65,9 @@ public interface ProductDetailsService {
      */
     void delete(Long id);
 
-    List<ProductDetailsDTO> findOneByProductName(String name);
+    List<ProductDetailsDTO> findAllByProductName(String name);
+
+    List<ProductDetailsDTO> findAllByProductNameIn(List<String> names);
+
+    List<ProductDetailsDTO> findLowestPriceByProductNameIn(List<String> names);
 }
