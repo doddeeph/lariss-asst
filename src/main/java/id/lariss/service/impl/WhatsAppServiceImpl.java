@@ -71,9 +71,12 @@ public class WhatsAppServiceImpl implements WhatsAppService {
 
     @Override
     public Mono<String> verifyWebhook(String mode, String token, String challenge) {
-        return Mono.defer(() ->
-            "subscribe".equals(mode) && verifyToken.equals(token) ? Mono.just(challenge) : Mono.just("Verification failed")
-        );
+        return Mono.defer(() -> {
+            LOG.debug("request -> mode: {}, token: {}, challenge: {}, verifyToken: {}", mode, token, challenge, verifyToken);
+            boolean verified = "subscribe".equals(mode) && verifyToken.equals(token);
+            LOG.debug("result -> verified: {}", verified);
+            return verified ? Mono.just(challenge) : Mono.just("Verification failed");
+        });
     }
 
     @Override
