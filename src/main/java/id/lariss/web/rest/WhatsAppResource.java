@@ -2,10 +2,7 @@ package id.lariss.web.rest;
 
 import id.lariss.service.WhatsAppService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 
 @RestController
@@ -14,6 +11,15 @@ public class WhatsAppResource {
 
     @Autowired
     private WhatsAppService whatsAppService;
+
+    @GetMapping("/webhook")
+    public Mono<String> verifyWebhook(
+        @RequestParam("hub.mode") String mode,
+        @RequestParam("hub.verify_token") String token,
+        @RequestParam("hub.challenge") String challenge
+    ) {
+        return verifyWebhook(mode, token, challenge);
+    }
 
     @PostMapping("/webhook")
     public Mono<Void> receiveMessage(@RequestBody String payload) {

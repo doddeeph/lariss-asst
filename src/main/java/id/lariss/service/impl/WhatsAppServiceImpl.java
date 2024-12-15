@@ -35,6 +35,9 @@ public class WhatsAppServiceImpl implements WhatsAppService {
     @Autowired
     private ChatService chatService;
 
+    @Value("${whatsapp.verify_token}")
+    private String verifyToken;
+
     @Value("${whatsapp.api_url}")
     private String apiUrl;
 
@@ -63,6 +66,13 @@ public class WhatsAppServiceImpl implements WhatsAppService {
                         });
                 }
             }
+        );
+    }
+
+    @Override
+    public Mono<String> verifyWebhook(String mode, String token, String challenge) {
+        return Mono.defer(() ->
+            "subscribe".equals(mode) && verifyToken.equals(token) ? Mono.just(challenge) : Mono.just("Verification failed")
         );
     }
 
