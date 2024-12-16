@@ -22,10 +22,7 @@ public class WhatsAppResource {
         @RequestParam("hub.verify_token") String token,
         @RequestParam("hub.challenge") String challenge
     ) {
-        return Mono.defer(() -> {
-            LOG.info("verifyWebhook -> mode: {}, token: {}, challenge: {}", mode, token, challenge);
-            return whatsAppService.verifyWebhook(mode, token, challenge);
-        });
+        return whatsAppService.verifyWebhook(mode, token, challenge);
     }
 
     @PostMapping("/webhook")

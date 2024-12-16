@@ -1,11 +1,13 @@
 package id.lariss.service.impl;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import id.lariss.service.ChatService;
 import id.lariss.service.WhatsAppService;
+import id.lariss.service.dto.whatsapp.webhook.Message;
+import id.lariss.service.dto.whatsapp.webhook.Request;
 import jakarta.annotation.PostConstruct;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import org.apache.camel.CamelContext;
 import org.apache.camel.ProducerTemplate;
@@ -71,25 +73,25 @@ public class WhatsAppServiceImpl implements WhatsAppService {
 
     @Override
     public Mono<String> verifyWebhook(String mode, String token, String challenge) {
-        return Mono.defer(() -> {
-            LOG.info("verifyWebhook -> mode: {}, token: {}, challenge: {}, verifyToken: {}", mode, token, challenge, verifyToken);
-            boolean verified = "subscribe".equals(mode) && verifyToken.equals(token);
-            LOG.info("verifyWebhook -> verified: {}", verified);
-            return verified ? Mono.just(challenge) : Mono.just("Verification failed");
-        });
+        return Mono.defer(() ->
+            "subscribe".equals(mode) && verifyToken.equals(token) ? Mono.just(challenge) : Mono.just("Verification failed")
+        );
     }
 
     @Override
     public Mono<Void> processIncomingMessage(String payload) {
         return Mono.fromRunnable(() -> {
             try {
-                JsonNode jsonNode = objectMapper.readTree(payload);
-                JsonNode messages = jsonNode.at("/entry/0/changes/0/value/messages");
-                if (messages.isArray() && !messages.isEmpty()) {
-                    String receivedText = messages.get(0).at("/text/body").asText();
-                    String fromNumber = messages.get(0).at("/from").asText();
-                    LOG.debug("{} sent the message: {}", fromNumber, receivedText);
-                    chatService.chat("", receivedText).subscribe(s -> sendWhatsAppMessage(fromNumber, s));
+                ObjectMapper objectMapper = new ObjectMapper();
+                Request[] request = objectMapper.readValue(payload, Request[].class);
+                List<Message> messages = request[0].getEntries().get(0).getChanges().get(0).getValue().getMessages();
+                if (!messages.isEmpty()) {
+                    String receivedText = messages.get(0).getText().getBody();
+                    String fromNumber = messages.get(0).getFrom();
+                    chatService
+                        .chat(fromNumber, receivedText)
+                        .collectList()
+                        .subscribe(strings -> sendWhatsAppMessage(fromNumber, String.join("", strings)).subscribe());
                 }
             } catch (Exception e) {
                 LOG.error("Error processing incoming payload: {} ", payload, e);
