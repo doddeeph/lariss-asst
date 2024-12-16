@@ -83,8 +83,8 @@ public class WhatsAppServiceImpl implements WhatsAppService {
         return Mono.fromRunnable(() -> {
             try {
                 ObjectMapper objectMapper = new ObjectMapper();
-                Request[] request = objectMapper.readValue(payload, Request[].class);
-                List<Message> messages = request[0].getEntries().get(0).getChanges().get(0).getValue().getMessages();
+                Request request = objectMapper.readValue(payload, Request.class);
+                List<Message> messages = request.getEntries().get(0).getChanges().get(0).getValue().getMessages();
                 if (!messages.isEmpty()) {
                     String receivedText = messages.get(0).getText().getBody();
                     String fromNumber = messages.get(0).getFrom();
