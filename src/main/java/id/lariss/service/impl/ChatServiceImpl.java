@@ -31,6 +31,7 @@ public class ChatServiceImpl implements ChatService {
                     - Get product details by product name
                     - Get lowest price product details by product names
                 Use parallel function calling if required.
+                No need to translate product name into another language, keep it in English.
                 Today is {current_date}.
                 """
             )
