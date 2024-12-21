@@ -13,7 +13,7 @@ import java.util.Set;
  * A Order.
  */
 @Entity
-@Table(name = "jhi_order")
+@Table(name = "order")
 @SuppressWarnings("common-java:DuplicatedBlocks")
 public class Order implements Serializable {
 

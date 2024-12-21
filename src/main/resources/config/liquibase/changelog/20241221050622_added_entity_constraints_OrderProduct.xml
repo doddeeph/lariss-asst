@@ -14,7 +14,7 @@
                                  baseTableName="order_product"
                                  constraintName="fk_order_product__order_id"
                                  referencedColumnNames="id"
-                                 referencedTableName="jhi_order"
+                                 referencedTableName="order"
                                  />
 
         <addForeignKeyConstraint baseColumnNames="product_details_id"

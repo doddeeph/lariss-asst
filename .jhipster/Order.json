@@ -4,7 +4,7 @@
   },
   "applications": "*",
   "dto": "mapstruct",
-  "entityTableName": "jhi_order",
+  "entityTableName": "order",
   "fields": [
     {
       "fieldName": "status",
