@@ -39,11 +39,47 @@ export const OrderDetail = () => {
           </dt>
           <dd>{orderEntity.status}</dd>
           <dt>
-            <span id="createdDate">
-              <Translate contentKey="larissAsstApp.order.createdDate">Created Date</Translate>
+            <span id="totalPrice">
+              <Translate contentKey="larissAsstApp.order.totalPrice">Total Price</Translate>
             </span>
           </dt>
-          <dd>{orderEntity.createdDate ? <TextFormat value={orderEntity.createdDate} type="date" format={APP_DATE_FORMAT} /> : null}</dd>
+          <dd>{orderEntity.totalPrice}</dd>
+          <dt>
+            <span id="trackId">
+              <Translate contentKey="larissAsstApp.order.trackId">Track Id</Translate>
+            </span>
+          </dt>
+          <dd>{orderEntity.trackId}</dd>
+          <dt>
+            <span id="orderDate">
+              <Translate contentKey="larissAsstApp.order.orderDate">Order Date</Translate>
+            </span>
+          </dt>
+          <dd>{orderEntity.orderDate ? <TextFormat value={orderEntity.orderDate} type="date" format={APP_DATE_FORMAT} /> : null}</dd>
+          <dt>
+            <span id="expirationDate">
+              <Translate contentKey="larissAsstApp.order.expirationDate">Expiration Date</Translate>
+            </span>
+          </dt>
+          <dd>
+            {orderEntity.expirationDate ? <TextFormat value={orderEntity.expirationDate} type="date" format={APP_DATE_FORMAT} /> : null}
+          </dd>
+          <dt>
+            <Translate contentKey="larissAsstApp.order.customer">Customer</Translate>
+          </dt>
+          <dd>{orderEntity.customer ? orderEntity.customer.id : ''}</dd>
+          <dt>
+            <Translate contentKey="larissAsstApp.order.shipping">Shipping</Translate>
+          </dt>
+          <dd>{orderEntity.shipping ? orderEntity.shipping.id : ''}</dd>
+          <dt>
+            <Translate contentKey="larissAsstApp.order.billing">Billing</Translate>
+          </dt>
+          <dd>{orderEntity.billing ? orderEntity.billing.id : ''}</dd>
+          <dt>
+            <Translate contentKey="larissAsstApp.order.payment">Payment</Translate>
+          </dt>
+          <dd>{orderEntity.payment ? orderEntity.payment.id : ''}</dd>
         </dl>
         <Button tag={Link} to="/order" replace color="info" data-cy="entityDetailsBackButton">
           <FontAwesomeIcon icon="arrow-left" />{' '}

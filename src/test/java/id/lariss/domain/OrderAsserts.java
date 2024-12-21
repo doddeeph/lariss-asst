@@ -1,5 +1,6 @@
 package id.lariss.domain;
 
+import static id.lariss.domain.AssertUtils.bigDecimalCompareTo;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class OrderAsserts {
@@ -48,7 +49,12 @@ public class OrderAsserts {
         assertThat(expected)
             .as("Verify Order relevant properties")
             .satisfies(e -> assertThat(e.getStatus()).as("check status").isEqualTo(actual.getStatus()))
-            .satisfies(e -> assertThat(e.getCreatedDate()).as("check createdDate").isEqualTo(actual.getCreatedDate()));
+            .satisfies(e ->
+                assertThat(e.getTotalPrice()).as("check totalPrice").usingComparator(bigDecimalCompareTo).isEqualTo(actual.getTotalPrice())
+            )
+            .satisfies(e -> assertThat(e.getTrackId()).as("check trackId").isEqualTo(actual.getTrackId()))
+            .satisfies(e -> assertThat(e.getOrderDate()).as("check orderDate").isEqualTo(actual.getOrderDate()))
+            .satisfies(e -> assertThat(e.getExpirationDate()).as("check expirationDate").isEqualTo(actual.getExpirationDate()));
     }
 
     /**
@@ -58,6 +64,11 @@ public class OrderAsserts {
      * @param actual the actual entity
      */
     public static void assertOrderUpdatableRelationshipsEquals(Order expected, Order actual) {
-        // empty method
+        assertThat(expected)
+            .as("Verify Order relationships")
+            .satisfies(e -> assertThat(e.getCustomer()).as("check customer").isEqualTo(actual.getCustomer()))
+            .satisfies(e -> assertThat(e.getShipping()).as("check shipping").isEqualTo(actual.getShipping()))
+            .satisfies(e -> assertThat(e.getBilling()).as("check billing").isEqualTo(actual.getBilling()))
+            .satisfies(e -> assertThat(e.getPayment()).as("check payment").isEqualTo(actual.getPayment()));
     }
 }

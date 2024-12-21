@@ -1,0 +1,39 @@
+{
+  "annotations": {
+    "changelogDate": "20241221102453"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "paymentMethod",
+      "fieldType": "PaymentMethod",
+      "fieldValues": "CREDIT_CARD,BANK_TRANSFER"
+    },
+    {
+      "fieldName": "cardNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "expirationDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "cvv",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Payment",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "order",
+      "otherEntityRelationshipName": "payment",
+      "relationshipName": "order",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

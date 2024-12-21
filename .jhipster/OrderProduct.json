@@ -8,8 +8,12 @@
     {
       "fieldName": "quantity",
       "fieldType": "Integer",
-      "fieldValidateRules": ["min", "required"],
+      "fieldValidateRules": ["min"],
       "fieldValidateRulesMin": "1"
+    },
+    {
+      "fieldName": "totalPrice",
+      "fieldType": "BigDecimal"
     }
   ],
   "name": "OrderProduct",

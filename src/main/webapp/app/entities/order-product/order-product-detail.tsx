@@ -38,6 +38,12 @@ export const OrderProductDetail = () => {
           </dt>
           <dd>{orderProductEntity.quantity}</dd>
           <dt>
+            <span id="totalPrice">
+              <Translate contentKey="larissAsstApp.orderProduct.totalPrice">Total Price</Translate>
+            </span>
+          </dt>
+          <dd>{orderProductEntity.totalPrice}</dd>
+          <dt>
             <Translate contentKey="larissAsstApp.orderProduct.order">Order</Translate>
           </dt>
           <dd>{orderProductEntity.order ? orderProductEntity.order.id : ''}</dd>

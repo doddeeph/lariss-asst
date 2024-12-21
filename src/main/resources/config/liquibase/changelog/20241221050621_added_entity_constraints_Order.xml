@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <!--
+        Added the constraints for entity Order.
+    -->
+    <changeSet id="20241221050621-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="customer_id"
+                                 baseTableName="order"
+                                 constraintName="fk_order__customer_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="customer"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="shipping_id"
+                                 baseTableName="order"
+                                 constraintName="fk_order__shipping_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="shipping"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="billing_id"
+                                 baseTableName="order"
+                                 constraintName="fk_order__billing_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="billing"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="payment_id"
+                                 baseTableName="order"
+                                 constraintName="fk_order__payment_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="payment"
+                                 />
+    </changeSet>
+</databaseChangeLog>

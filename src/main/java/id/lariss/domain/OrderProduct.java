@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 /**
  * A OrderProduct.
@@ -21,13 +22,15 @@ public class OrderProduct implements Serializable {
     @Column(name = "id")
     private Long id;
 
-    @NotNull
     @Min(value = 1)
-    @Column(name = "quantity", nullable = false)
+    @Column(name = "quantity")
     private Integer quantity;
 
+    @Column(name = "total_price", precision = 21, scale = 2)
+    private BigDecimal totalPrice;
+
     @ManyToOne(fetch = FetchType.LAZY)
-    @JsonIgnoreProperties(value = { "orderProducts" }, allowSetters = true)
+    @JsonIgnoreProperties(value = { "customer", "shipping", "billing", "payment", "orderProducts" }, allowSetters = true)
     private Order order;
 
     @ManyToOne(fetch = FetchType.LAZY)
@@ -77,6 +80,19 @@ public class OrderProduct implements Serializable {
 
     public void setQuantity(Integer quantity) {
         this.quantity = quantity;
+    }
+
+    public BigDecimal getTotalPrice() {
+        return this.totalPrice;
+    }
+
+    public OrderProduct totalPrice(BigDecimal totalPrice) {
+        this.setTotalPrice(totalPrice);
+        return this;
+    }
+
+    public void setTotalPrice(BigDecimal totalPrice) {
+        this.totalPrice = totalPrice;
     }
 
     public Order getOrder() {
@@ -130,6 +146,7 @@ public class OrderProduct implements Serializable {
         return "OrderProduct{" +
             "id=" + getId() +
             ", quantity=" + getQuantity() +
+            ", totalPrice=" + getTotalPrice() +
             "}";
     }
 }

@@ -117,6 +117,10 @@ export const OrderProduct = () => {
                   <Translate contentKey="larissAsstApp.orderProduct.quantity">Quantity</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('quantity')} />
                 </th>
+                <th className="hand" onClick={sort('totalPrice')}>
+                  <Translate contentKey="larissAsstApp.orderProduct.totalPrice">Total Price</Translate>{' '}
+                  <FontAwesomeIcon icon={getSortIconByFieldName('totalPrice')} />
+                </th>
                 <th>
                   <Translate contentKey="larissAsstApp.orderProduct.order">Order</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
@@ -136,6 +140,7 @@ export const OrderProduct = () => {
                     </Button>
                   </td>
                   <td>{orderProduct.quantity}</td>
+                  <td>{orderProduct.totalPrice}</td>
                   <td>{orderProduct.order ? <Link to={`/order/${orderProduct.order.id}`}>{orderProduct.order.id}</Link> : ''}</td>
                   <td>
                     {orderProduct.productDetails ? (

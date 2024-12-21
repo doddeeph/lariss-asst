@@ -1,7 +1,11 @@
 package id.lariss.domain;
 
+import static id.lariss.domain.BillingTestSamples.*;
+import static id.lariss.domain.CustomerTestSamples.*;
 import static id.lariss.domain.OrderProductTestSamples.*;
 import static id.lariss.domain.OrderTestSamples.*;
+import static id.lariss.domain.PaymentTestSamples.*;
+import static id.lariss.domain.ShippingTestSamples.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import id.lariss.web.rest.TestUtil;
@@ -23,6 +27,54 @@ class OrderTest {
 
         order2 = getOrderSample2();
         assertThat(order1).isNotEqualTo(order2);
+    }
+
+    @Test
+    void customerTest() {
+        Order order = getOrderRandomSampleGenerator();
+        Customer customerBack = getCustomerRandomSampleGenerator();
+
+        order.setCustomer(customerBack);
+        assertThat(order.getCustomer()).isEqualTo(customerBack);
+
+        order.customer(null);
+        assertThat(order.getCustomer()).isNull();
+    }
+
+    @Test
+    void shippingTest() {
+        Order order = getOrderRandomSampleGenerator();
+        Shipping shippingBack = getShippingRandomSampleGenerator();
+
+        order.setShipping(shippingBack);
+        assertThat(order.getShipping()).isEqualTo(shippingBack);
+
+        order.shipping(null);
+        assertThat(order.getShipping()).isNull();
+    }
+
+    @Test
+    void billingTest() {
+        Order order = getOrderRandomSampleGenerator();
+        Billing billingBack = getBillingRandomSampleGenerator();
+
+        order.setBilling(billingBack);
+        assertThat(order.getBilling()).isEqualTo(billingBack);
+
+        order.billing(null);
+        assertThat(order.getBilling()).isNull();
+    }
+
+    @Test
+    void paymentTest() {
+        Order order = getOrderRandomSampleGenerator();
+        Payment paymentBack = getPaymentRandomSampleGenerator();
+
+        order.setPayment(paymentBack);
+        assertThat(order.getPayment()).isEqualTo(paymentBack);
+
+        order.payment(null);
+        assertThat(order.getPayment()).isNull();
     }
 
     @Test

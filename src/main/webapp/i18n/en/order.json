@@ -19,7 +19,14 @@
       },
       "id": "ID",
       "status": "Status",
-      "createdDate": "Created Date",
+      "totalPrice": "Total Price",
+      "trackId": "Track Id",
+      "orderDate": "Order Date",
+      "expirationDate": "Expiration Date",
+      "customer": "Customer",
+      "shipping": "Shipping",
+      "billing": "Billing",
+      "payment": "Payment",
       "orderProduct": "Order Product"
     }
   }

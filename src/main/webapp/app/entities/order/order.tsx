@@ -117,9 +117,33 @@ export const Order = () => {
                   <Translate contentKey="larissAsstApp.order.status">Status</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('status')} />
                 </th>
-                <th className="hand" onClick={sort('createdDate')}>
-                  <Translate contentKey="larissAsstApp.order.createdDate">Created Date</Translate>{' '}
-                  <FontAwesomeIcon icon={getSortIconByFieldName('createdDate')} />
+                <th className="hand" onClick={sort('totalPrice')}>
+                  <Translate contentKey="larissAsstApp.order.totalPrice">Total Price</Translate>{' '}
+                  <FontAwesomeIcon icon={getSortIconByFieldName('totalPrice')} />
+                </th>
+                <th className="hand" onClick={sort('trackId')}>
+                  <Translate contentKey="larissAsstApp.order.trackId">Track Id</Translate>{' '}
+                  <FontAwesomeIcon icon={getSortIconByFieldName('trackId')} />
+                </th>
+                <th className="hand" onClick={sort('orderDate')}>
+                  <Translate contentKey="larissAsstApp.order.orderDate">Order Date</Translate>{' '}
+                  <FontAwesomeIcon icon={getSortIconByFieldName('orderDate')} />
+                </th>
+                <th className="hand" onClick={sort('expirationDate')}>
+                  <Translate contentKey="larissAsstApp.order.expirationDate">Expiration Date</Translate>{' '}
+                  <FontAwesomeIcon icon={getSortIconByFieldName('expirationDate')} />
+                </th>
+                <th>
+                  <Translate contentKey="larissAsstApp.order.customer">Customer</Translate> <FontAwesomeIcon icon="sort" />
+                </th>
+                <th>
+                  <Translate contentKey="larissAsstApp.order.shipping">Shipping</Translate> <FontAwesomeIcon icon="sort" />
+                </th>
+                <th>
+                  <Translate contentKey="larissAsstApp.order.billing">Billing</Translate> <FontAwesomeIcon icon="sort" />
+                </th>
+                <th>
+                  <Translate contentKey="larissAsstApp.order.payment">Payment</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
                 <th />
               </tr>
@@ -135,7 +159,14 @@ export const Order = () => {
                   <td>
                     <Translate contentKey={`larissAsstApp.OrderStatus.${order.status}`} />
                   </td>
-                  <td>{order.createdDate ? <TextFormat type="date" value={order.createdDate} format={APP_DATE_FORMAT} /> : null}</td>
+                  <td>{order.totalPrice}</td>
+                  <td>{order.trackId}</td>
+                  <td>{order.orderDate ? <TextFormat type="date" value={order.orderDate} format={APP_DATE_FORMAT} /> : null}</td>
+                  <td>{order.expirationDate ? <TextFormat type="date" value={order.expirationDate} format={APP_DATE_FORMAT} /> : null}</td>
+                  <td>{order.customer ? <Link to={`/customer/${order.customer.id}`}>{order.customer.id}</Link> : ''}</td>
+                  <td>{order.shipping ? <Link to={`/shipping/${order.shipping.id}`}>{order.shipping.id}</Link> : ''}</td>
+                  <td>{order.billing ? <Link to={`/billing/${order.billing.id}`}>{order.billing.id}</Link> : ''}</td>
+                  <td>{order.payment ? <Link to={`/payment/${order.payment.id}`}>{order.payment.id}</Link> : ''}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">
                       <Button tag={Link} to={`/order/${order.id}`} color="info" size="sm" data-cy="entityDetailsButton">

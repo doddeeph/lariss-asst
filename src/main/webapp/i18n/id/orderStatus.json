@@ -2,7 +2,10 @@
   "larissAsstApp": {
     "OrderStatus": {
       "null": "",
-      "PAID": "PAID"
+      "PENDING": "PENDING",
+      "CONFIRMED": "CONFIRMED",
+      "SHIPPED": "SHIPPED",
+      "DELIVERED": "DELIVERED"
     }
   }
 }

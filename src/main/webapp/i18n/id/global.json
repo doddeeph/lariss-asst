@@ -23,7 +23,11 @@
         "strapColor": "Strap Color",
         "strapSize": "Strap Size",
         "order": "Order",
-        "orderProduct": "Order Product"
+        "orderProduct": "Order Product",
+        "customer": "Customer",
+        "shipping": "Shipping",
+        "billing": "Billing",
+        "payment": "Payment"
       },
       "account": {
         "main": "Akun",

@@ -1,5 +1,6 @@
 package id.lariss.domain;
 
+import static id.lariss.domain.AssertUtils.bigDecimalCompareTo;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class OrderProductAsserts {
@@ -47,7 +48,10 @@ public class OrderProductAsserts {
     public static void assertOrderProductUpdatableFieldsEquals(OrderProduct expected, OrderProduct actual) {
         assertThat(expected)
             .as("Verify OrderProduct relevant properties")
-            .satisfies(e -> assertThat(e.getQuantity()).as("check quantity").isEqualTo(actual.getQuantity()));
+            .satisfies(e -> assertThat(e.getQuantity()).as("check quantity").isEqualTo(actual.getQuantity()))
+            .satisfies(e ->
+                assertThat(e.getTotalPrice()).as("check totalPrice").usingComparator(bigDecimalCompareTo).isEqualTo(actual.getTotalPrice())
+            );
     }
 
     /**

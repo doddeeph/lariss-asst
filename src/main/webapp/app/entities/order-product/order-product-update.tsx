@@ -53,6 +53,9 @@ export const OrderProductUpdate = () => {
     if (values.quantity !== undefined && typeof values.quantity !== 'number') {
       values.quantity = Number(values.quantity);
     }
+    if (values.totalPrice !== undefined && typeof values.totalPrice !== 'number') {
+      values.totalPrice = Number(values.totalPrice);
+    }
 
     const entity = {
       ...orderProductEntity,
@@ -109,10 +112,16 @@ export const OrderProductUpdate = () => {
                 data-cy="quantity"
                 type="text"
                 validate={{
-                  required: { value: true, message: translate('entity.validation.required') },
                   min: { value: 1, message: translate('entity.validation.min', { min: 1 }) },
                   validate: v => isNumber(v) || translate('entity.validation.number'),
                 }}
+              />
+              <ValidatedField
+                label={translate('larissAsstApp.orderProduct.totalPrice')}
+                id="order-product-totalPrice"
+                name="totalPrice"
+                data-cy="totalPrice"
+                type="text"
               />
               <ValidatedField
                 id="order-product-order"

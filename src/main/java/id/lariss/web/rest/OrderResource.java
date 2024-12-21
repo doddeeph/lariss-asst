@@ -4,8 +4,6 @@ import id.lariss.repository.OrderRepository;
 import id.lariss.service.OrderService;
 import id.lariss.service.dto.OrderDTO;
 import id.lariss.web.rest.errors.BadRequestAlertException;
-import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotNull;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
@@ -55,7 +53,7 @@ public class OrderResource {
      * @throws URISyntaxException if the Location URI syntax is incorrect.
      */
     @PostMapping("")
-    public ResponseEntity<OrderDTO> createOrder(@Valid @RequestBody OrderDTO orderDTO) throws URISyntaxException {
+    public ResponseEntity<OrderDTO> createOrder(@RequestBody OrderDTO orderDTO) throws URISyntaxException {
         LOG.debug("REST request to save Order : {}", orderDTO);
         if (orderDTO.getId() != null) {
             throw new BadRequestAlertException("A new order cannot already have an ID", ENTITY_NAME, "idexists");
@@ -79,7 +77,7 @@ public class OrderResource {
     @PutMapping("/{id}")
     public ResponseEntity<OrderDTO> updateOrder(
         @PathVariable(value = "id", required = false) final Long id,
-        @Valid @RequestBody OrderDTO orderDTO
+        @RequestBody OrderDTO orderDTO
     ) throws URISyntaxException {
         LOG.debug("REST request to update Order : {}, {}", id, orderDTO);
         if (orderDTO.getId() == null) {
@@ -113,7 +111,7 @@ public class OrderResource {
     @PatchMapping(value = "/{id}", consumes = { "application/json", "application/merge-patch+json" })
     public ResponseEntity<OrderDTO> partialUpdateOrder(
         @PathVariable(value = "id", required = false) final Long id,
-        @NotNull @RequestBody OrderDTO orderDTO
+        @RequestBody OrderDTO orderDTO
     ) throws URISyntaxException {
         LOG.debug("REST request to partial update Order partially : {}, {}", id, orderDTO);
         if (orderDTO.getId() == null) {

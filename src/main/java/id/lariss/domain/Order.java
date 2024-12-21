@@ -3,8 +3,8 @@ package id.lariss.domain;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import id.lariss.domain.enumeration.OrderStatus;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.*;
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.HashSet;
 import java.util.Set;
@@ -25,14 +25,41 @@ public class Order implements Serializable {
     @Column(name = "id")
     private Long id;
 
-    @NotNull
     @Enumerated(EnumType.STRING)
-    @Column(name = "status", nullable = false)
+    @Column(name = "status")
     private OrderStatus status;
 
-    @NotNull
-    @Column(name = "created_date", nullable = false)
-    private Instant createdDate;
+    @Column(name = "total_price", precision = 21, scale = 2)
+    private BigDecimal totalPrice;
+
+    @Column(name = "track_id")
+    private String trackId;
+
+    @Column(name = "order_date")
+    private Instant orderDate;
+
+    @Column(name = "expiration_date")
+    private Instant expirationDate;
+
+    @JsonIgnoreProperties(value = { "order" }, allowSetters = true)
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(unique = true)
+    private Customer customer;
+
+    @JsonIgnoreProperties(value = { "order" }, allowSetters = true)
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(unique = true)
+    private Shipping shipping;
+
+    @JsonIgnoreProperties(value = { "order" }, allowSetters = true)
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(unique = true)
+    private Billing billing;
+
+    @JsonIgnoreProperties(value = { "order" }, allowSetters = true)
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(unique = true)
+    private Payment payment;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "order")
     @JsonIgnoreProperties(value = { "order", "productDetails" }, allowSetters = true)
@@ -66,17 +93,108 @@ public class Order implements Serializable {
         this.status = status;
     }
 
-    public Instant getCreatedDate() {
-        return this.createdDate;
+    public BigDecimal getTotalPrice() {
+        return this.totalPrice;
     }
 
-    public Order createdDate(Instant createdDate) {
-        this.setCreatedDate(createdDate);
+    public Order totalPrice(BigDecimal totalPrice) {
+        this.setTotalPrice(totalPrice);
         return this;
     }
 
-    public void setCreatedDate(Instant createdDate) {
-        this.createdDate = createdDate;
+    public void setTotalPrice(BigDecimal totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
+    public String getTrackId() {
+        return this.trackId;
+    }
+
+    public Order trackId(String trackId) {
+        this.setTrackId(trackId);
+        return this;
+    }
+
+    public void setTrackId(String trackId) {
+        this.trackId = trackId;
+    }
+
+    public Instant getOrderDate() {
+        return this.orderDate;
+    }
+
+    public Order orderDate(Instant orderDate) {
+        this.setOrderDate(orderDate);
+        return this;
+    }
+
+    public void setOrderDate(Instant orderDate) {
+        this.orderDate = orderDate;
+    }
+
+    public Instant getExpirationDate() {
+        return this.expirationDate;
+    }
+
+    public Order expirationDate(Instant expirationDate) {
+        this.setExpirationDate(expirationDate);
+        return this;
+    }
+
+    public void setExpirationDate(Instant expirationDate) {
+        this.expirationDate = expirationDate;
+    }
+
+    public Customer getCustomer() {
+        return this.customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public Order customer(Customer customer) {
+        this.setCustomer(customer);
+        return this;
+    }
+
+    public Shipping getShipping() {
+        return this.shipping;
+    }
+
+    public void setShipping(Shipping shipping) {
+        this.shipping = shipping;
+    }
+
+    public Order shipping(Shipping shipping) {
+        this.setShipping(shipping);
+        return this;
+    }
+
+    public Billing getBilling() {
+        return this.billing;
+    }
+
+    public void setBilling(Billing billing) {
+        this.billing = billing;
+    }
+
+    public Order billing(Billing billing) {
+        this.setBilling(billing);
+        return this;
+    }
+
+    public Payment getPayment() {
+        return this.payment;
+    }
+
+    public void setPayment(Payment payment) {
+        this.payment = payment;
+    }
+
+    public Order payment(Payment payment) {
+        this.setPayment(payment);
+        return this;
     }
 
     public Set<OrderProduct> getOrderProducts() {
@@ -135,7 +253,10 @@ public class Order implements Serializable {
         return "Order{" +
             "id=" + getId() +
             ", status='" + getStatus() + "'" +
-            ", createdDate='" + getCreatedDate() + "'" +
+            ", totalPrice=" + getTotalPrice() +
+            ", trackId='" + getTrackId() + "'" +
+            ", orderDate='" + getOrderDate() + "'" +
+            ", expirationDate='" + getExpirationDate() + "'" +
             "}";
     }
 }

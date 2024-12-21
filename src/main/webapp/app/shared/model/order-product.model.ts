@@ -3,7 +3,8 @@ import { IProductDetails } from 'app/shared/model/product-details.model';
 
 export interface IOrderProduct {
   id?: number;
-  quantity?: number;
+  quantity?: number | null;
+  totalPrice?: number | null;
   order?: IOrder | null;
   productDetails?: IProductDetails | null;
 }

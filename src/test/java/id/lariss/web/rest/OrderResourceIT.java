@@ -37,11 +37,11 @@ import org.springframework.transaction.annotation.Transactional;
 @WithMockUser
 class OrderResourceIT {
 
-    private static final OrderStatus DEFAULT_STATUS = OrderStatus.PAID;
-    private static final OrderStatus UPDATED_STATUS = OrderStatus.PAID;
+    private static final OrderStatus DEFAULT_STATUS = OrderStatus.DELIVERED;
+    private static final OrderStatus UPDATED_STATUS = OrderStatus.DELIVERED;
 
-    private static final Instant DEFAULT_CREATED_DATE = Instant.ofEpochMilli(0L);
-    private static final Instant UPDATED_CREATED_DATE = Instant.now().truncatedTo(ChronoUnit.MILLIS);
+    private static final Instant DEFAULT_ORDER_DATE = Instant.ofEpochMilli(0L);
+    private static final Instant UPDATED_ORDER_DATE = Instant.now().truncatedTo(ChronoUnit.MILLIS);
 
     private static final String ENTITY_API_URL = "/api/orders";
     private static final String ENTITY_API_URL_ID = ENTITY_API_URL + "/{id}";
@@ -75,7 +75,7 @@ class OrderResourceIT {
      * if they test an entity which requires the current entity.
      */
     public static Order createEntity() {
-        return new Order().status(DEFAULT_STATUS).createdDate(DEFAULT_CREATED_DATE);
+        return new Order().status(DEFAULT_STATUS).orderDate(DEFAULT_ORDER_DATE);
     }
 
     /**
@@ -85,7 +85,7 @@ class OrderResourceIT {
      * if they test an entity which requires the current entity.
      */
     public static Order createUpdatedEntity() {
-        return new Order().status(UPDATED_STATUS).createdDate(UPDATED_CREATED_DATE);
+        return new Order().status(UPDATED_STATUS).orderDate(UPDATED_ORDER_DATE);
     }
 
     @BeforeEach
@@ -165,7 +165,7 @@ class OrderResourceIT {
     void checkCreatedDateIsRequired() throws Exception {
         long databaseSizeBeforeTest = getRepositoryCount();
         // set the field null
-        order.setCreatedDate(null);
+        order.orderDate(null);
 
         // Create the Order, which fails.
         OrderDTO orderDTO = orderMapper.toDto(order);
@@ -190,7 +190,7 @@ class OrderResourceIT {
             .andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
             .andExpect(jsonPath("$.[*].id").value(hasItem(order.getId().intValue())))
             .andExpect(jsonPath("$.[*].status").value(hasItem(DEFAULT_STATUS.toString())))
-            .andExpect(jsonPath("$.[*].createdDate").value(hasItem(DEFAULT_CREATED_DATE.toString())));
+            .andExpect(jsonPath("$.[*].createdDate").value(hasItem(DEFAULT_ORDER_DATE.toString())));
     }
 
     @Test
@@ -206,7 +206,7 @@ class OrderResourceIT {
             .andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
             .andExpect(jsonPath("$.id").value(order.getId().intValue()))
             .andExpect(jsonPath("$.status").value(DEFAULT_STATUS.toString()))
-            .andExpect(jsonPath("$.createdDate").value(DEFAULT_CREATED_DATE.toString()));
+            .andExpect(jsonPath("$.createdDate").value(DEFAULT_ORDER_DATE.toString()));
     }
 
     @Test
@@ -228,7 +228,7 @@ class OrderResourceIT {
         Order updatedOrder = orderRepository.findById(order.getId()).orElseThrow();
         // Disconnect from session so that the updates on updatedOrder are not directly saved in db
         em.detach(updatedOrder);
-        updatedOrder.status(UPDATED_STATUS).createdDate(UPDATED_CREATED_DATE);
+        updatedOrder.status(UPDATED_STATUS).orderDate(UPDATED_ORDER_DATE);
         OrderDTO orderDTO = orderMapper.toDto(updatedOrder);
 
         restOrderMockMvc
@@ -314,7 +314,7 @@ class OrderResourceIT {
         Order partialUpdatedOrder = new Order();
         partialUpdatedOrder.setId(order.getId());
 
-        partialUpdatedOrder.createdDate(UPDATED_CREATED_DATE);
+        partialUpdatedOrder.orderDate(UPDATED_ORDER_DATE);
 
         restOrderMockMvc
             .perform(
@@ -342,7 +342,7 @@ class OrderResourceIT {
         Order partialUpdatedOrder = new Order();
         partialUpdatedOrder.setId(order.getId());
 
-        partialUpdatedOrder.status(UPDATED_STATUS).createdDate(UPDATED_CREATED_DATE);
+        partialUpdatedOrder.status(UPDATED_STATUS).orderDate(UPDATED_ORDER_DATE);
 
         restOrderMockMvc
             .perform(
