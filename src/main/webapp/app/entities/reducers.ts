@@ -12,6 +12,8 @@ import material from 'app/entities/material/material.reducer';
 import caseSize from 'app/entities/case-size/case-size.reducer';
 import strapColor from 'app/entities/strap-color/strap-color.reducer';
 import strapSize from 'app/entities/strap-size/strap-size.reducer';
+import order from 'app/entities/order/order.reducer';
+import orderProduct from 'app/entities/order-product/order-product.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 const entitiesReducers = {
@@ -29,6 +31,8 @@ const entitiesReducers = {
   caseSize,
   strapColor,
   strapSize,
+  order,
+  orderProduct,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
 };
 

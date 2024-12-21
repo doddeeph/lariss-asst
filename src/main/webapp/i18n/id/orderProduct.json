@@ -1,0 +1,26 @@
+{
+  "larissAsstApp": {
+    "orderProduct": {
+      "home": {
+        "title": "Order Products",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Order Product baru",
+        "createOrEditLabel": "Buat atau edit Order Product",
+        "notFound": "No Order Products found"
+      },
+      "created": "Order Product dengan id {{ param }} telah dibuat",
+      "updated": "Order Product dengan id {{ param }} telah diperbaharui",
+      "deleted": "Order Product dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Order Product {{ id }}?"
+      },
+      "detail": {
+        "title": "Order Product"
+      },
+      "id": "ID",
+      "quantity": "Quantity",
+      "order": "Order",
+      "productDetails": "Product Details"
+    }
+  }
+}

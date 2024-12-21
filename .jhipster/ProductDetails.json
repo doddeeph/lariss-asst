@@ -107,6 +107,13 @@
       "relationshipName": "strapSize",
       "relationshipSide": "left",
       "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "orderProduct",
+      "otherEntityRelationshipName": "productDetails",
+      "relationshipName": "orderProduct",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
     }
   ],
   "searchEngine": "no",

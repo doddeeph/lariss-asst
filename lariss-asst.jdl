@@ -68,6 +68,19 @@ entity StrapSize {
   value String
 }
 
+entity Order {
+  status OrderStatus required
+  createdDate Instant required
+}
+
+enum OrderStatus {
+  PAID
+}
+
+entity OrderProduct {
+  quantity Integer min(1) required
+}
+
 relationship ManyToOne {
   Product{category(name)} to Category
   ProductDetails{product(name)} to Product
@@ -82,6 +95,8 @@ relationship ManyToOne {
   ProductDetails{caseSize(name)} to CaseSize
   ProductDetails{strapColor(name)} to StrapColor
   ProductDetails{strapSize(name)} to StrapSize
+  OrderProduct to Order
+  OrderProduct to ProductDetails
 }
 
 use mapstruct, serviceImpl, pagination for *

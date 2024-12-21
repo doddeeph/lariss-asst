@@ -21,7 +21,9 @@
         "material": "Material",
         "caseSize": "Case Size",
         "strapColor": "Strap Color",
-        "strapSize": "Strap Size"
+        "strapSize": "Strap Size",
+        "order": "Order",
+        "orderProduct": "Order Product"
       },
       "account": {
         "main": "Account",

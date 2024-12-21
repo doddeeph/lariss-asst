@@ -6,6 +6,7 @@ import static id.lariss.domain.ConnectivityTestSamples.*;
 import static id.lariss.domain.DescriptionTestSamples.*;
 import static id.lariss.domain.MaterialTestSamples.*;
 import static id.lariss.domain.MemoryTestSamples.*;
+import static id.lariss.domain.OrderProductTestSamples.*;
 import static id.lariss.domain.ProcessorTestSamples.*;
 import static id.lariss.domain.ProductDetailsTestSamples.*;
 import static id.lariss.domain.ProductTestSamples.*;
@@ -16,6 +17,8 @@ import static id.lariss.domain.StrapSizeTestSamples.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import id.lariss.web.rest.TestUtil;
+import java.util.HashSet;
+import java.util.Set;
 import org.junit.jupiter.api.Test;
 
 class ProductDetailsTest {
@@ -176,5 +179,27 @@ class ProductDetailsTest {
 
         productDetails.strapSize(null);
         assertThat(productDetails.getStrapSize()).isNull();
+    }
+
+    @Test
+    void orderProductTest() {
+        ProductDetails productDetails = getProductDetailsRandomSampleGenerator();
+        OrderProduct orderProductBack = getOrderProductRandomSampleGenerator();
+
+        productDetails.addOrderProduct(orderProductBack);
+        assertThat(productDetails.getOrderProducts()).containsOnly(orderProductBack);
+        assertThat(orderProductBack.getProductDetails()).isEqualTo(productDetails);
+
+        productDetails.removeOrderProduct(orderProductBack);
+        assertThat(productDetails.getOrderProducts()).doesNotContain(orderProductBack);
+        assertThat(orderProductBack.getProductDetails()).isNull();
+
+        productDetails.orderProducts(new HashSet<>(Set.of(orderProductBack)));
+        assertThat(productDetails.getOrderProducts()).containsOnly(orderProductBack);
+        assertThat(orderProductBack.getProductDetails()).isEqualTo(productDetails);
+
+        productDetails.setOrderProducts(new HashSet<>());
+        assertThat(productDetails.getOrderProducts()).doesNotContain(orderProductBack);
+        assertThat(orderProductBack.getProductDetails()).isNull();
     }
 }
