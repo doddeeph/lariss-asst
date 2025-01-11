@@ -5,7 +5,9 @@ import id.lariss.repository.CategoryRepository;
 import id.lariss.service.CategoryService;
 import id.lariss.service.dto.CategoryDTO;
 import id.lariss.service.mapper.CategoryMapper;
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
@@ -80,5 +82,11 @@ public class CategoryServiceImpl implements CategoryService {
     public void delete(Long id) {
         LOG.debug("Request to delete Category : {}", id);
         categoryRepository.deleteById(id);
+    }
+
+    @Override
+    public List<CategoryDTO> findAll() {
+        LOG.debug("Request to get all Categories ");
+        return categoryRepository.findAll().stream().map(categoryMapper::toDto).toList();
     }
 }
