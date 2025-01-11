@@ -1,6 +1,7 @@
 package id.lariss.service;
 
 import id.lariss.service.dto.CategoryDTO;
+import java.util.List;
 import java.util.Optional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -55,4 +56,6 @@ public interface CategoryService {
      * @param id the id of the entity.
      */
     void delete(Long id);
+
+    List<CategoryDTO> findAll();
 }

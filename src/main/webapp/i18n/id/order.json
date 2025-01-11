@@ -1,0 +1,33 @@
+{
+  "larissAsstApp": {
+    "order": {
+      "home": {
+        "title": "Orders",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Order baru",
+        "createOrEditLabel": "Buat atau edit Order",
+        "notFound": "No Orders found"
+      },
+      "created": "Order dengan id {{ param }} telah dibuat",
+      "updated": "Order dengan id {{ param }} telah diperbaharui",
+      "deleted": "Order dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Order {{ id }}?"
+      },
+      "detail": {
+        "title": "Order"
+      },
+      "id": "ID",
+      "status": "Status",
+      "totalPrice": "Total Price",
+      "trackId": "Track Id",
+      "orderDate": "Order Date",
+      "expirationDate": "Expiration Date",
+      "customer": "Customer",
+      "shipping": "Shipping",
+      "billing": "Billing",
+      "payment": "Payment",
+      "orderProduct": "Order Product"
+    }
+  }
+}

@@ -68,4 +68,6 @@ public interface ProductService {
     List<ProductDTO> findAll();
 
     List<ProductDTO> findAllByCategoryName(String name);
+
+    List<ProductDTO> findAllProductByCategoryId(Long categoryId);
 }

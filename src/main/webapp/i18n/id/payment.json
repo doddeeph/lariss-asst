@@ -1,0 +1,28 @@
+{
+  "larissAsstApp": {
+    "payment": {
+      "home": {
+        "title": "Payments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Payment baru",
+        "createOrEditLabel": "Buat atau edit Payment",
+        "notFound": "No Payments found"
+      },
+      "created": "Payment dengan id {{ param }} telah dibuat",
+      "updated": "Payment dengan id {{ param }} telah diperbaharui",
+      "deleted": "Payment dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Payment {{ id }}?"
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "id": "ID",
+      "paymentMethod": "Payment Method",
+      "cardNumber": "Card Number",
+      "expirationDate": "Expiration Date",
+      "cvv": "Cvv",
+      "order": "Order"
+    }
+  }
+}

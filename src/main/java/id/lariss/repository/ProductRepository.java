@@ -45,4 +45,7 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
         "where lower(product.category.name) like %:name%"
     )
     List<Product> findAllByCategoryName(@Param("name") String name);
+
+    @Query("select product from Product product where product.category.id = :categoryId")
+    List<Product> findAllProductByCategoryId(Long categoryId);
 }

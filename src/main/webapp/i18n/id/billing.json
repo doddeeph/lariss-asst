@@ -1,0 +1,29 @@
+{
+  "larissAsstApp": {
+    "billing": {
+      "home": {
+        "title": "Billings",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Billing baru",
+        "createOrEditLabel": "Buat atau edit Billing",
+        "notFound": "No Billings found"
+      },
+      "created": "Billing dengan id {{ param }} telah dibuat",
+      "updated": "Billing dengan id {{ param }} telah diperbaharui",
+      "deleted": "Billing dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Billing {{ id }}?"
+      },
+      "detail": {
+        "title": "Billing"
+      },
+      "id": "ID",
+      "streetAddress": "Street Address",
+      "city": "City",
+      "state": "State",
+      "postalCode": "Postal Code",
+      "country": "Country",
+      "order": "Order"
+    }
+  }
+}
