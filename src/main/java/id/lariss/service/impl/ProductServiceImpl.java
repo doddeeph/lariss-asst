@@ -88,6 +88,12 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
+    public List<ProductDTO> findAllProductByCategoryId(Long categoryId) {
+        LOG.info("Request to find all product name by category ID: {}", categoryId);
+        return productRepository.findAllProductByCategoryId(categoryId).stream().map(productMapper::toDto).toList();
+    }
+
+    @Override
     public List<ProductDTO> findAll() {
         LOG.debug("Request to get all Products");
         return productRepository.findAllWithToOneRelationships().stream().map(productMapper::toDto).toList();

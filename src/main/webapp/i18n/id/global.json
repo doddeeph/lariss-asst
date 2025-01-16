@@ -21,7 +21,10 @@
         "material": "Material",
         "caseSize": "Case Size",
         "strapColor": "Strap Color",
-        "strapSize": "Strap Size"
+        "strapSize": "Strap Size",
+        "order": "Order",
+        "orderItem": "Order Item",
+        "customer": "Customer"
       },
       "account": {
         "main": "Akun",

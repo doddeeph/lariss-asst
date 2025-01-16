@@ -65,6 +65,8 @@ public interface ProductService {
      */
     void delete(Long id);
 
+    List<ProductDTO> findAllProductByCategoryId(Long categoryId);
+
     List<ProductDTO> findAll();
 
     List<ProductDTO> findAllByCategoryName(String name);

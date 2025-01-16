@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * A ProductDetails.
@@ -70,6 +72,10 @@ public class ProductDetails implements Serializable {
 
     @ManyToOne(fetch = FetchType.LAZY)
     private StrapSize strapSize;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "productDetails")
+    @JsonIgnoreProperties(value = { "order", "productDetails" }, allowSetters = true)
+    private Set<OrderItem> orderItems = new HashSet<>();
 
     // jhipster-needle-entity-add-field - JHipster will add fields here
 
@@ -278,6 +284,37 @@ public class ProductDetails implements Serializable {
 
     public ProductDetails strapSize(StrapSize strapSize) {
         this.setStrapSize(strapSize);
+        return this;
+    }
+
+    public Set<OrderItem> getOrderItems() {
+        return this.orderItems;
+    }
+
+    public void setOrderItems(Set<OrderItem> orderItems) {
+        if (this.orderItems != null) {
+            this.orderItems.forEach(i -> i.setProductDetails(null));
+        }
+        if (orderItems != null) {
+            orderItems.forEach(i -> i.setProductDetails(this));
+        }
+        this.orderItems = orderItems;
+    }
+
+    public ProductDetails orderItems(Set<OrderItem> orderItems) {
+        this.setOrderItems(orderItems);
+        return this;
+    }
+
+    public ProductDetails addOrderItem(OrderItem orderItem) {
+        this.orderItems.add(orderItem);
+        orderItem.setProductDetails(this);
+        return this;
+    }
+
+    public ProductDetails removeOrderItem(OrderItem orderItem) {
+        this.orderItems.remove(orderItem);
+        orderItem.setProductDetails(null);
         return this;
     }
 

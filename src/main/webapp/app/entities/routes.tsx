@@ -17,6 +17,9 @@ import Material from './material';
 import CaseSize from './case-size';
 import StrapColor from './strap-color';
 import StrapSize from './strap-size';
+import Order from './order';
+import OrderItem from './order-item';
+import Customer from './customer';
 /* jhipster-needle-add-route-import - JHipster will add routes here */
 
 export default () => {
@@ -38,6 +41,9 @@ export default () => {
         <Route path="case-size/*" element={<CaseSize />} />
         <Route path="strap-color/*" element={<StrapColor />} />
         <Route path="strap-size/*" element={<StrapSize />} />
+        <Route path="order/*" element={<Order />} />
+        <Route path="order-item/*" element={<OrderItem />} />
+        <Route path="customer/*" element={<Customer />} />
         {/* jhipster-needle-add-route-path - JHipster will add routes here */}
       </ErrorBoundaryRoutes>
     </div>

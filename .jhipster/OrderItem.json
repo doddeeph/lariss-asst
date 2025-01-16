@@ -1,0 +1,39 @@
+{
+  "annotations": {
+    "changelogDate": "20250116162847"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "quantity",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["min"],
+      "fieldValidateRulesMin": "1"
+    },
+    {
+      "fieldName": "totalPrice",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "name": "OrderItem",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "order",
+      "otherEntityRelationshipName": "orderItem",
+      "relationshipName": "order",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "productDetails",
+      "otherEntityRelationshipName": "orderItem",
+      "relationshipName": "productDetails",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

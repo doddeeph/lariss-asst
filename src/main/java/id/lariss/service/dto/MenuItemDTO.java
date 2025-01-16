@@ -1,0 +1,16 @@
+package id.lariss.service.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class MenuItemDTO {
+
+    private Long productNumber;
+    private String productName;
+}
