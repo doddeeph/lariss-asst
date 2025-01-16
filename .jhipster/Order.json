@@ -1,0 +1,43 @@
+{
+  "annotations": {
+    "changelogDate": "20250116162846"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "entityTableName": "jhi_order",
+  "fields": [
+    {
+      "fieldName": "status",
+      "fieldType": "OrderStatus",
+      "fieldValues": "PENDING,CONFIRMED,SHIPPED,DELIVERED"
+    },
+    {
+      "fieldName": "totalPrice",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "orderDate",
+      "fieldType": "Instant"
+    }
+  ],
+  "name": "Order",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "customer",
+      "otherEntityRelationshipName": "order",
+      "relationshipName": "customer",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "orderItem",
+      "otherEntityRelationshipName": "order",
+      "relationshipName": "orderItem",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

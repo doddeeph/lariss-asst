@@ -25,9 +25,14 @@
     <include file="config/liquibase/changelog/20241207093719_added_entity_CaseSize.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20241207093720_added_entity_StrapColor.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20241207093721_added_entity_StrapSize.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250116162846_added_entity_Order.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250116162847_added_entity_OrderItem.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250116162848_added_entity_Customer.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <include file="config/liquibase/changelog/20241203050751_added_entity_constraints_Product.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20241203050752_added_entity_constraints_ProductDetails.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250116162846_added_entity_constraints_Order.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250116162847_added_entity_constraints_OrderItem.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

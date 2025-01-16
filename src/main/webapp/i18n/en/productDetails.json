@@ -32,7 +32,8 @@
       "material": "Material",
       "caseSize": "Case Size",
       "strapColor": "Strap Color",
-      "strapSize": "Strap Size"
+      "strapSize": "Strap Size",
+      "orderItem": "Order Item"
     }
   }
 }

@@ -6,6 +6,7 @@ import static id.lariss.domain.ConnectivityTestSamples.*;
 import static id.lariss.domain.DescriptionTestSamples.*;
 import static id.lariss.domain.MaterialTestSamples.*;
 import static id.lariss.domain.MemoryTestSamples.*;
+import static id.lariss.domain.OrderItemTestSamples.*;
 import static id.lariss.domain.ProcessorTestSamples.*;
 import static id.lariss.domain.ProductDetailsTestSamples.*;
 import static id.lariss.domain.ProductTestSamples.*;
@@ -16,6 +17,8 @@ import static id.lariss.domain.StrapSizeTestSamples.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import id.lariss.web.rest.TestUtil;
+import java.util.HashSet;
+import java.util.Set;
 import org.junit.jupiter.api.Test;
 
 class ProductDetailsTest {
@@ -176,5 +179,27 @@ class ProductDetailsTest {
 
         productDetails.strapSize(null);
         assertThat(productDetails.getStrapSize()).isNull();
+    }
+
+    @Test
+    void orderItemTest() {
+        ProductDetails productDetails = getProductDetailsRandomSampleGenerator();
+        OrderItem orderItemBack = getOrderItemRandomSampleGenerator();
+
+        productDetails.addOrderItem(orderItemBack);
+        assertThat(productDetails.getOrderItems()).containsOnly(orderItemBack);
+        assertThat(orderItemBack.getProductDetails()).isEqualTo(productDetails);
+
+        productDetails.removeOrderItem(orderItemBack);
+        assertThat(productDetails.getOrderItems()).doesNotContain(orderItemBack);
+        assertThat(orderItemBack.getProductDetails()).isNull();
+
+        productDetails.orderItems(new HashSet<>(Set.of(orderItemBack)));
+        assertThat(productDetails.getOrderItems()).containsOnly(orderItemBack);
+        assertThat(orderItemBack.getProductDetails()).isEqualTo(productDetails);
+
+        productDetails.setOrderItems(new HashSet<>());
+        assertThat(productDetails.getOrderItems()).doesNotContain(orderItemBack);
+        assertThat(orderItemBack.getProductDetails()).isNull();
     }
 }

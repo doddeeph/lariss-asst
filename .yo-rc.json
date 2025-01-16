@@ -29,13 +29,16 @@
       "Material",
       "CaseSize",
       "StrapColor",
-      "StrapSize"
+      "StrapSize",
+      "Order",
+      "OrderItem",
+      "Customer"
     ],
     "feignClient": null,
     "jhipsterVersion": "8.7.3",
     "jwtSecretKey": "YWViM2MwZThkYWI3YTI1YmFjYTk4ZjMxMWU0ZGMzOGI3MDE2YWYxYjFlOTJhNjE1ZTZlNTNmYTYxNTAxY2IyODlkNWZiZDc4ZWRhMjYyNzE5MTE5ZmExZTk5YjdmMTc2MGVlYzJiMGRmZWRhZDBkMTJlMDU0ODM2ZGMyOWRjYmY=",
     "languages": ["en", "id"],
-    "lastLiquibaseTimestamp": 1733564241000,
+    "lastLiquibaseTimestamp": 1737044928000,
     "messageBroker": false,
     "microfrontend": null,
     "microfrontends": [],
